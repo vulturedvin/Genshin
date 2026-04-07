@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="logo/primogem.png">
+    <title>Genshin Impact – Step Into a Vast Magical World of Adventure</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <header>
+        <nav class="nav-wrapper nav">
+            <div class="container">
+                <a href="home.html" class="brand-logo">
+                    <img src="logo/logo-genshin.png" alt="Genshin Impact Logo" class="logo">
+                </a>
+
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-gameplay">Gameplay<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-gameplay" class="dropdown-content">
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                        <li><a href="weapons.html">Weapons</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-world">World<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-world" class="dropdown-content">
+                        <li><a href="regions.html">Regions</a></li>
+                        <li><a href="lore.html">Lore</a></li>
+                        <li><a href="exploration.html">Exploration</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-about">About<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-about" class="dropdown-content">
+                        <li><a href="about.html">About the Game</a></li>
+                        <li><a href="play.html">Play Now</a></li>
+                    </ul>
+
+                    <audio id="bgMusic" src="music/bustling.mp3" autoplay loop></audio>
+                    <a id="toggleBtn" class="btn waves-effect waves-light">
+                        <i class="material-icons center">music_note</i>
+                    </a>
+                </ul>
+                <ul class="sidenav grey darken-4" id="mobile-menu">
+                    <li><a href="home.html" class="white-text" style="margin-top: 15%;">Home</a></li>
+                    <li><a href="news.html" class="white-text" >News</a></li>
+                    <li><a href="characters.html" class="white-text">Characters</a></li>
+                    <li><a href="elements.html" class="white-text">Elements</a></li>
+                    <li><a href="weapons.html" class="white-text">Weapons</a></li>
+                    <li><a href="regions.html" class="white-text">Regions</a></li>
+                    <li><a href="lore.html" class="white-text">Lore</a></li>
+                    <li><a href="exploration.html" class="white-text">Exploration</a></li>
+                    <li><a href="about.html" class="white-text">About the Game</a></li>
+                    <li><a href="play.html" class="white-text">Play Now</a></li>
+                    <li><img style=" max-width: 100%; margin-top: 30%; " src="logo/logo-genshin.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+
+    <section class="banner">
+        <video src="video/BANNER_GENSHIN.mp4" autoplay muted loop></video>
+        <div class="banner-overlay">
+            <h1>Welcome to Teyvat</h1>
+            <p>Embark on your adventure in the world of Genshin Impact</p>
+            <a href="#next-section" class="scroll-btn">
+                <i class="material-icons">keyboard_arrow_down</i>
+                <i class="material-icons">keyboard_arrow_down</i>
+                <i class="material-icons">keyboard_arrow_down</i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- featured -->
+
+    <section class="featured" id="next-section">
+        <img src="background/dawn.jpg" class="featured-bg" alt="featured-bg">
+
+        <div class="container-overlay">
+            <h2>Featured Characters</h2>
+
+            <div class="carousel" id="featured-carousel">
+                <div class="carousel-item">
+                    <div class="character-card" onclick="window.location.href='characters.html'">
+                        <img src="featured img/durin-bg.jpg" class="character-banner" alt="Durin Banner">
+                        <img src="featured img/durin-nobg.png" class="character-img" alt="Durin">
+                        <div class="character-details">
+                            <h3>Durin</h3>
+                            <p>A dragon born from M's pen, who came to alight in the human world. His "story" continues to unfold.</p>
+                        </div>
+                        <button class="play-btn" onclick="event.stopPropagation(); window.open('https://www.hoyolab.com/article/42515832')"> More Info </button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="character-card" onclick="window.location.href='characters.html'">
+                        <img src="featured img/jahoda-bg.jpg" class="character-banner" alt="Jahoda Banner">
+                        <img src="featured img/jahoda-nobg.png" class="character-img" alt="Jahoda">
+                        <div class="character-details">
+                            <h3>Jahoda</h3>
+                            <p>The Curatorium of Secrets' extremely reliable, do-it-all super employee (or so she claims).</p>
+                        </div>
+                        <button class="play-btn" onclick="event.stopPropagation(); window.open('https://www.hoyolab.com/article/41970643')"> More Info </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- news -->
+
+    <section class="news">
+        <img src="background/street.jpg" class="news-bg" alt="street">
+        <div class="container-overlay">
+            <h2>Latest Updates</h2>
+            <div class="carousel" id="news-carousel">
+                <div class="carousel-item">
+                    <div class="news-card">
+                        <a href="https://www.hoyolab.com/article/42525064">
+                            <img src="news/news1.jpg" alt="News 1">
+                            <h3>Character Skill Showcase — Durin</h3>
+                            <p>Hello, Traveler! Next, we're bringing you information on Durin's combat style. Let's take a look~</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="news-card">
+                        <a href="https://www.hoyolab.com/article/42482249">
+                            <img src="news/news2.jpg" alt="News 2">
+                            <h3>Unveiling "The Witch's Gift"!</h3>
+                            <p>Hello, Traveler! To prepare for an uncertain future, the witches have prepared mystery gifts for their companions... Let's peek beneath the wrapping and see what surprises await!</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="news-card">
+                        <a href="https://genshin.hoyoverse.com/en/news/detail/161127">
+                            <img src="news/news3.jpg" alt="News 3">
+                            <h3>Genshin Impact December Calendar Wallpapers</h3>
+                            <p>Hello, Travelers! Here's the December 2025 calendar wallpapers (PC/Mobile/Apple Watch) for you~ Feel free to save and use them as you like~</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="news-card">
+                        <img src="news/news4.jpg" alt="News 4">
+                        <h3>Durin's Character Anecdote: A Story About the "Evil Dragon"</h3>
+                        <p>"Go on, my dear child, and get to know this world so full of beauty." "This story of magic has not yet reached its true final chapter..." Let's check out Durin's character anecdote!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button id="news-prev"><i class="material-icons">chevron_left</i></button>
+                <button id="news-next"><i class="material-icons">chevron_right</i></button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- quick links -->
+
+    <section class="quick-links">
+        <img src="background/skynight.jpg" alt="">
+        <div class="container-overlay">
+            <h2>Quick Links</h2>
+            <div class="carousel" id="links-carousel">
+                <div class="carousel-item">
+                    <a href="about.html"><img src="img/no-quest.png" alt="About Game">
+                        <h3>About Game</h3>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="characters.html"><img src="img/no-character.png" alt="Characters">
+                        <h3>Characters</h3>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="exploration.html"><img src="img/no-compass.png" alt="Map">
+                        <h3>Exploration</h3>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="elements.html"><img src="img/no-slime.png" alt="Lore">
+                        <h3>Elements</h3>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="lore.html"><img src="img/no-books.png" alt="Lore">
+                        <h3>Lore</h3>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="weapons.html"><img src="img/no-weap.png" alt="Lore">
+                        <h3>Weapon</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- social links -->
+
+    <section class="social-links">
+        <img src="background/statue.gif" alt="statue">
+        <div class="container-overlay">
+            <h2>Follow Genshin Impact</h2>
+            <div class="socials">
+            <a href="https://x.com/GenshinImpact"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@GenshinImpact"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/Genshinimpact/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/genshinimpact/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.hoyolab.com/circles/2/27/official?page_type=27&page_sort=events&lang=en-us&utm_source=component&utm_id=2"><i class="fas fa-globe"></i></a>
+            <a href="https://discord.com/invite/genshinimpact"><i class="fab fa-discord"></i></a>
+            <a href="https://www.reddit.com/r/Genshin_Impact/"><i class="fab fa-reddit"></i></a>
+            <a href="https://www.twitch.tv/genshinimpactofficial"><i class="fab fa-twitch"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="https://genshin.hoyoverse.com/en/company/privacy">Privacy Policy</a>
+            <a href="https://genshin.hoyoverse.com/en/company/terms">Terms</a>
+            <a href="https://www.hoyoverse.com/en-us/about-us?utm_source=genshin&utm_medium=footer">About HoYoLab</a>
+            <a href="https://cs.hoyoverse.com/static/hoyoverse-new-csc-service-hall-fe/index.html?page_id=19&login_type=visitor&game_biz=platform_hyvpass&lang=en-us&utm_source=genshin&utm_medium=footer">Help Center</a>
+        </div>
+        <div class="esrb">
+            <img src="img/esrb.png" alt="ESRB">
+        </div>
+        <div class="logos">
+            <img src="logo/logo-genshin.png" alt="Genshin Impact Logo">
+            <img src="logo/hoyoverse.png" alt="HoYoVerse Logo">
+        </div>
+        <p class="copyright">© 2025 COGNOSPHERE. All Rights Reserved. <br> Genshin Impact and all related assets, images, characters, and trademarks belong to HoYoverse. </p>
+        <p class="credits">Website created by <a href="https://www.instagram.com/vulturedvin/"><em>@vulturedvin</em></a> on IG</p>
+    </div>
+</footer>
+
+
+
+    <!-- scripts -->
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+            $('.tabs').tabs();
+            $('.dropdown-trigger').dropdown();
+            $('.carousel').first().carousel({
+                indicators: true,
+                numVisible: 1,
+                fullWidth: true
+            });
+            $('#news-carousel').carousel({
+                indicators: true,
+                numVisible: 3
+            });
+            $(".scroll-btn").click(function(e){
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $("#next-section").offset().top
+                }, 800);
+            });
+            const audio = $('#bgMusic')[0];
+            const toggleBtn = $('#toggleBtn');
+            toggleBtn.on('click', function() {
+                if (audio.paused) {
+                    audio.play();
+                    toggleBtn.find('i').text('not_interested');
+                } else {
+                    audio.pause();
+                    toggleBtn.find('i').text('music_note');
+                }
+            });
+            document.getElementById('bgMusic').volume = 0.5;
+            $('#news-prev').click(function () {
+                $('#news-carousel').carousel('prev');
+            });
+
+            $('#news-next').click(function () {
+                $('#news-carousel').carousel('next');
+                    });
+            $('#featured-carousel').carousel({
+                indicators: true,
+                numVisible: 1,
+                fullWidth: true
+            });
+            setInterval(function() {
+                $('#featured-carousel').carousel('next');
+            }, 4000);
+            $('#links-carousel').carousel({
+                indicators: true,
+                numVisible: 3
+            });
+            setInterval(function() {
+                $('#links-carousel').carousel('next');
+            }, 3000); 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="lore.css">
+    <link rel="icon" href="logo/primogem.png">
+    <title>Lore – Genshin Impact</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <header>
+        <nav class="nav-wrapper nav">
+            <div class="container">
+                <a href="home.html" class="brand-logo">
+                    <img src="logo/logo-genshin.png" alt="Genshin Impact Logo" class="logo">
+                </a>
+
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-gameplay">Gameplay<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-gameplay" class="dropdown-content">
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                        <li><a href="weapons.html">Weapons</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-world">World<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-world" class="dropdown-content">
+                        <li><a href="regions.html">Regions</a></li>
+                        <li><a href="lore.html">Lore</a></li>
+                        <li><a href="exploration.html">Exploration</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-about">About<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-about" class="dropdown-content">
+                        <li><a href="about.html">About the Game</a></li>
+                        <li><a href="play.html">Play Now</a></li>
+                    </ul>
+
+                    <audio id="bgMusic" src="music/city.mp3" autoplay loop></audio>
+                    <a id="toggleBtn" class="btn waves-effect waves-light">
+                        <i class="material-icons center">music_note</i>
+                    </a>
+                </ul>
+                <ul class="sidenav grey darken-4" id="mobile-menu">
+                    <li><a href="home.html" class="white-text" style="margin-top: 15%;">Home</a></li>
+                    <li><a href="news.html" class="white-text" >News</a></li>
+                    <li><a href="characters.html" class="white-text">Characters</a></li>
+                    <li><a href="elements.html" class="white-text">Elements</a></li>
+                    <li><a href="weapons.html" class="white-text">Weapons</a></li>
+                    <li><a href="regions.html" class="white-text">Regions</a></li>
+                    <li><a href="lore.html" class="white-text">Lore</a></li>
+                    <li><a href="exploration.html" class="white-text">Exploration</a></li>
+                    <li><a href="about.html" class="white-text">About the Game</a></li>
+                    <li><a href="play.html" class="white-text">Play Now</a></li>
+                    <li><img style=" max-width: 100%; margin-top: 30%; " src="logo/logo-genshin.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+
+    <section class="banner">
+        <img src="background/lore-card.png"></img>
+        <div class="banner-overlay">
+            <h1>Lore</h1>
+    
+            <p class="details">Teyvat is a world of wonder, where the elements flow like rivers and the gods watch over their domains. <br> Here, we explore the core aspects of its lore without delving into specific events or characters. Each section highlights a key pillar of Teyvat's foundation, offering a glimpse into the mysteries that await adventurers.</p>
+        </div>
+        
+    </section>
+
+
+
+    
+    <section class="lore-section">
+        <div class="container">
+            
+
+            
+            <div class="lore-block">
+                <img src="background/witch.png" alt="Origins Icon" class="lore-icon"> 
+                <h3>The Origins of Teyvat</h3>
+                <p>Teyvat's world was shaped by ancient forces long before mortals walked its lands. Legends speak of a primordial era where the very fabric of reality was woven, giving rise to the seven nations and the elemental energies that define them. This foundational period set the stage for the divine and mortal interplay that continues today.</p>
+            </div>
+
+            
+            <div class="lore-block">
+                <img src="background/archon.png" alt="Archons Icon" class="lore-icon"> 
+                <h3>The Archons</h3>
+                <p>Each of Teyvat's seven nations is governed by an Archon, powerful beings who embody the ideals of their people. These divine rulers maintain balance and order, drawing from the elements to protect their domains. Their presence ensures that harmony prevails amidst the world's diverse cultures and landscapes.</p>
+            </div>
+
+            
+            <div class="lore-block">
+                <img src="background/elementary.png" alt="Elements Icon" class="lore-icon"> 
+                <h3>The Power of the Elements</h3>
+                <p>At the heart of Teyvat lies the seven elements—Anemo, Geo, Electro, Dendro, Hydro, Pyro, and Cryo. These fundamental forces are not just tools for combat but the essence of life itself, influencing everything from nature's cycles to the abilities of its inhabitants. Understanding them reveals the interconnectedness of all things in this world.</p>
+            </div>
+
+            
+            <div class="lore-block">
+                <img src="background/iconerah.png" alt="Civilizations Icon" class="lore-icon"> 
+                <h3>Ancient Civilizations</h3>
+                <p>Before the current era, advanced civilizations flourished in Teyvat, leaving behind ruins and artifacts that hint at their wisdom. These lost societies contributed to the world's knowledge, from forgotten technologies to enduring philosophies. Their legacies continue to influence the present, reminding travelers of the depth of Teyvat's history.</p>
+            </div>
+
+            
+            <div class="lore-block">
+                <img src="background/events.png" alt="Events Icon" class="lore-icon"> 
+                <h3>Current Events and Themes</h3>
+                <p>Today, Teyvat is a place of ongoing change, where new challenges and discoveries emerge. Themes of freedom, contracts, eternity, and wisdom guide the nations, encouraging exploration and growth. As travelers journey through the lands, they uncover layers of meaning that connect the past to the future.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="https://genshin.hoyoverse.com/en/company/privacy">Privacy Policy</a>
+            <a href="https://genshin.hoyoverse.com/en/company/terms">Terms</a>
+            <a href="https://www.hoyoverse.com/en-us/about-us?utm_source=genshin&utm_medium=footer">About HoYoLab</a>
+            <a href="https://cs.hoyoverse.com/static/hoyoverse-new-csc-service-hall-fe/index.html?page_id=19&login_type=visitor&game_biz=platform_hyvpass&lang=en-us&utm_source=genshin&utm_medium=footer">Help Center</a>
+        </div>
+        <div class="esrb">
+            <img src="img/esrb.png" alt="ESRB">
+        </div>
+        <div class="logos">
+            <img src="logo/logo-genshin.png" alt="Genshin Impact Logo">
+            <img src="logo/hoyoverse.png" alt="HoYoVerse Logo">
+        </div>
+        <p class="copyright">© 2025 COGNOSPHERE. All Rights Reserved. <br> Genshin Impact and all related assets, images, characters, and trademarks belong to HoYoverse. </p>
+        <p class="credits">Website created by <a href="https://www.instagram.com/vulturedvin/"><em>@vulturedvin</em></a> on IG</p>
+    </div>
+</footer>
+
+
+
+    <!-- scripts -->
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+            $('.tabs').tabs();
+            $('.dropdown-trigger').dropdown();
+            $('.carousel').first().carousel({
+                indicators: true,
+                numVisible: 1,
+                fullWidth: true
+            });
+            $(".scroll-btn").click(function(e){
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $("#next-section").offset().top
+                }, 800);
+            });
+            
+            const audio = $('#bgMusic')[0];
+            const toggleBtn = $('#toggleBtn');
+            toggleBtn.on('click', function() {
+                if (audio.paused) {
+                    audio.play();
+                    toggleBtn.find('i').text('not_interested');
+                } else {
+                    audio.pause();
+                    toggleBtn.find('i').text('music_note');
+                }
+            });
+            document.getElementById('bgMusic').volume = 0.5;
+            
+            setInterval(function() {
+                $('#links-carousel').carousel('next');
+            }, 3000); 
+        });
+    </script>
+</body>
+</html>

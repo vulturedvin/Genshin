@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="about.css"> 
+    <link rel="icon" href="logo/primogem.png">
+    <title>About the Game – Genshin Impact</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header>
+        <nav class="nav-wrapper nav">
+            <div class="container">
+                <a href="home.html" class="brand-logo">
+                    <img src="logo/logo-genshin.png" alt="Genshin Impact Logo" class="logo">
+                </a>
+
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-gameplay">Gameplay<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-gameplay" class="dropdown-content">
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                        <li><a href="weapons.html">Weapons</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-world">World<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-world" class="dropdown-content">
+                        <li><a href="regions.html">Regions</a></li>
+                        <li><a href="lore.html">Lore</a></li>
+                        <li><a href="exploration.html">Exploration</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-about">About<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-about" class="dropdown-content">
+                        <li><a href="about.html">About the Game</a></li>
+                        <li><a href="play.html">Play Now</a></li>
+                    </ul>
+
+                    <audio id="bgMusic" src="music/favored.mp3" autoplay loop></audio>
+                    <a id="toggleBtn" class="btn waves-effect waves-light">
+                        <i class="material-icons center">music_note</i>
+                    </a>
+                </ul>
+                <ul class="sidenav grey darken-4" id="mobile-menu">
+                    <li><a href="home.html" class="white-text" style="margin-top: 15%;">Home</a></li>
+                    <li><a href="news.html" class="white-text" >News</a></li>
+                    <li><a href="characters.html" class="white-text">Characters</a></li>
+                    <li><a href="elements.html" class="white-text">Elements</a></li>
+                    <li><a href="weapons.html" class="white-text">Weapons</a></li>
+                    <li><a href="regions.html" class="white-text">Regions</a></li>
+                    <li><a href="lore.html" class="white-text">Lore</a></li>
+                    <li><a href="exploration.html" class="white-text">Exploration</a></li>
+                    <li><a href="about.html" class="white-text">About the Game</a></li>
+                    <li><a href="play.html" class="white-text">Play Now</a></li>
+                    <li><img style=" max-width: 100%; margin-top: 30%; " src="logo/logo-genshin.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <video src="video/about-what.mp4" autoplay muted loop></video>
+        <div class="banner-overlay">
+            <h1>About Game</h1>
+            <p>Genshin Impact follows the Traveler’s journey across Teyvat in search of answers, allies, and the truth behind the world’s elemental balance. Discover nations, meet new companions, and uncover secrets hidden by time.</p>
+        </div>
+    </section>
+
+    
+    <section class="about-section">
+        <div class="static-bg"></div> 
+
+        
+        <div class="feature-block" id="adventure">
+            <div class="feature-content">
+                <h2>An Epic Fantasy Adventure</h2>
+                <p>Experience an immersive single-player campaign. As a traveler from another world, you will embark on a journey to reunite with your long-lost sibling and unravel the mysteries of Teyvat, and yourself.</p>
+            </div>
+            <img src="content/adventure.png" alt="Adventure Image" class="feature-image"> 
+        </div>
+
+        
+        <div class="feature-block" id="world">
+            <img src="content/world.png" alt="World Image" class="feature-image">
+            <div class="feature-content">
+                <h2>Your World to Discover</h2>
+                <p>Fly across the open world, swim through crystal-clear waters, and climb towering mountains. Stray off the beaten path to discover all the hidden secrets of a world full of wonder and mystery.</p>
+            </div>
+             
+        </div>
+
+        
+        <div class="feature-block" id="battle">
+            <div class="feature-content">
+                <h2>Travel Alone or Battle Together</h2>
+                <p>Charge head-on into battles solo, or invite friends to join the fight against powerful monsters with cross-play for PC, iOS, Android, PS, and Xbox.</p>
+            </div>
+            <img src="content/combat.png" alt="Battle Image" class="feature-image"> 
+        </div>
+
+        
+        <div class="feature-block" id="elements">
+            <img src="content/dilucussy.png" alt="Elements Image" class="feature-image">
+            <div class="feature-content">
+                <h2>Master the Seven Elements</h2>
+                <p>Not just another mindless hack and slash. Manipulating the various elements is the key to defeating powerful enemies and solving challenging puzzles.</p>
+            </div>
+             
+        </div>
+
+        
+        <div class="feature-block" id="team">
+            <div class="feature-content">
+                <h2>Build Your Dream Team</h2>
+                <p>Choose who fights by your side. Build your party from over 100+ characters (with more to come) — each with unique abilities, personalities, and combat styles.</p>
+            </div>
+            <img src="content/characas.png" alt="Team Image" class="feature-image">
+        </div>
+    </section>
+
+    
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="https://genshin.hoyoverse.com/en/company/privacy">Privacy Policy</a>
+            <a href="https://genshin.hoyoverse.com/en/company/terms">Terms</a>
+            <a href="https://www.hoyoverse.com/en-us/about-us?utm_source=genshin&utm_medium=footer">About HoYoLab</a>
+            <a href="https://cs.hoyoverse.com/static/hoyoverse-new-csc-service-hall-fe/index.html?page_id=19&login_type=visitor&game_biz=platform_hyvpass&lang=en-us&utm_source=genshin&utm_medium=footer">Help Center</a>
+        </div>
+        <div class="esrb">
+            <img src="img/esrb.png" alt="ESRB">
+        </div>
+        <div class="logos">
+            <img src="logo/logo-genshin.png" alt="Genshin Impact Logo">
+            <img src="logo/hoyoverse.png" alt="HoYoVerse Logo">
+        </div>
+        <p class="copyright">© 2025 COGNOSPHERE. All Rights Reserved. <br> Genshin Impact and all related assets, images, characters, and trademarks belong to HoYoverse. </p>
+        <p class="credits">Website created by <a href="https://www.instagram.com/vulturedvin/"><em>@vulturedvin</em></a> on IG</p>
+    </div>
+</footer>
+
+
+    <!-- scripts -->
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+            $('.tabs').tabs();
+            $('.dropdown-trigger').dropdown();
+            const audio = $('#bgMusic')[0];
+            const toggleBtn = $('#toggleBtn');
+            toggleBtn.on('click', function() {
+                if (audio.paused) {
+                    audio.play();
+                    toggleBtn.find('i').text('not_interested');
+                } else {
+                    audio.pause();
+                    toggleBtn.find('i').text('music_note');
+                }
+            });
+            document.getElementById('bgMusic').volume = 0.5;
+        });
+    </script>
+</body>
+</html>

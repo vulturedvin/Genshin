@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Teyvat!</title>
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo/primogem.png">
+</head>
+<body class="genshin-bg">
+    <audio id="bgMusic" src="music/twilight-serenity.mp3" autoplay loop></audio>
+    <div>
+        <video src="video/loadingg.mp4" autoplay loop muted></video>
+        <div id="intro-screen" class="center-align full-screen">
+            <h1 class="genshin-title">Start Game</h1>
+            <a id="begin-btn" class="waves-effect waves-light btn-large genshin-btn valign-center">Click to Begin</a>
+        </div>
+
+        <div id="loading-screen1" class="center-align full-screen hide">
+            <h2 class="genshin-title">Loading...</h2>
+        </div>
+
+        <div id="start-screen" class="center-align full-screen hide">
+            <h2 class="genshin-title">Ready to Explore?</h2>
+            <a id="start-btn" class="waves-effect waves-light btn-large genshin-btn">Click to Start</a>
+        </div>
+    </div>
+
+    <div id="loading-screen2" class="center-align full-screen hide">
+        <div class="elements-container">
+            <div class="element" id="pyro">
+                <img src="genshin elements/pyro1.png" alt="Pyro">
+            </div>
+            <div class="element" id="hydro">
+                <img src="genshin elements/hydro1.png" alt="Hydro">
+            </div>
+            <div class="element" id="anemo">
+                <img src="genshin elements/anemo1.png" alt="Anemo">
+            </div>
+            <div class="element" id="electro">
+                <img src="genshin elements/electro1.png" alt="Electro">
+            </div>
+            <div class="element" id="dendro">
+                <img src="genshin elements/dendro1.png" alt="Dendro">
+            </div>
+            <div class="element" id="cryo">
+                <img src="genshin elements/cryo1.png" alt="Cryo">
+            </div>
+            <div class="element" id="geo">
+                <img src="genshin elements/geo1.png" alt="Geo">
+            </div>
+        </div>
+        <div class="headphones">
+            <img src="img/headphones.png"  alt="headphones">
+        </div>
+        <p class="subtitle">Wearing headphones may improve your gaming experience</p>
+        
+    </div>
+
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.scrollspy').scrollSpy();
+
+            $('#begin-btn').click(function() {
+                $('#intro-screen').addClass('hide');
+                $('#loading-screen1').removeClass('hide');
+                document.getElementById('bgMusic').volume = 0.5;
+                document.getElementById('bgMusic').play();
+                
+                setTimeout(function() {
+                    $('#loading-screen1').addClass('hide');
+                    $('#start-screen').removeClass('hide');
+                }, 3000);
+            });
+
+            $('#start-btn').click(function() {
+                $('#start-screen').addClass('hide');
+                $('#loading-screen2').removeClass('hide');
+                
+                setTimeout(function() {
+                    $('#pyro').addClass('loaded');
+                }, 500);
+                setTimeout(function() {
+                    $('#hydro').addClass('loaded');
+                }, 1000);
+                setTimeout(function() {
+                    $('#anemo').addClass('loaded');
+                }, 1500);
+                setTimeout(function() {
+                    $('#electro').addClass('loaded');
+                }, 2000);
+                setTimeout(function() {
+                    $('#dendro').addClass('loaded');
+                }, 2500);
+                setTimeout(function() {
+                    $('#cryo').addClass('loaded');
+                }, 3000);
+                setTimeout(function() {
+                    $('#geo').addClass('loaded');
+                }, 3500);
+                
+                setTimeout(function() {
+                    window.location.href = 'home.html';
+                }, 4500);
+            });
+            
+        });
+    </script>
+</body>
+</html>

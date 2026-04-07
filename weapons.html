@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="weapons.css">
+    <link rel="icon" href="logo/primogem.png">
+    <title>Weapons – Genshin Impact</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <header>
+        <nav class="nav-wrapper nav">
+            <div class="container">
+                <a href="home.html" class="brand-logo">
+                    <img src="logo/logo-genshin.png" alt="Genshin Impact Logo" class="logo">
+                </a>
+
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-gameplay">Gameplay<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-gameplay" class="dropdown-content">
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                        <li><a href="weapons.html">Weapons</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-world">World<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-world" class="dropdown-content">
+                        <li><a href="regions.html">Regions</a></li>
+                        <li><a href="lore.html">Lore</a></li>
+                        <li><a href="exploration.html">Exploration</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-about">About<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-about" class="dropdown-content">
+                        <li><a href="about.html">About the Game</a></li>
+                        <li><a href="play.html">Play Now</a></li>
+                    </ul>
+
+                    <audio id="bgMusic" src="music/dawn.mp3" autoplay loop></audio>
+                    <a id="toggleBtn" class="btn waves-effect waves-light">
+                        <i class="material-icons center">music_note</i>
+                    </a>
+                </ul>
+                <ul class="sidenav grey darken-4" id="mobile-menu">
+                    <li><a href="home.html" class="white-text" style="margin-top: 15%;">Home</a></li>
+                    <li><a href="news.html" class="white-text" >News</a></li>
+                    <li><a href="characters.html" class="white-text">Characters</a></li>
+                    <li><a href="elements.html" class="white-text">Elements</a></li>
+                    <li><a href="weapons.html" class="white-text">Weapons</a></li>
+                    <li><a href="regions.html" class="white-text">Regions</a></li>
+                    <li><a href="lore.html" class="white-text">Lore</a></li>
+                    <li><a href="exploration.html" class="white-text">Exploration</a></li>
+                    <li><a href="about.html" class="white-text">About the Game</a></li>
+                    <li><a href="play.html" class="white-text">Play Now</a></li>
+                    <li><img style=" max-width: 100%; margin-top: 30%; " src="logo/logo-genshin.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+
+    <section class="banner">
+        <img src="background/UI_NameCardPic_Sss_P.png" alt="Weapons Banner">
+        <div class="banner-overlay">
+            <h1>WEAPONS</h1>
+            <p class="center weapons-intro">Weapons in Genshin Impact help characters deal more damage and shape how they fight. There are five weapon types in the game, and each character can only use one. Players can level up weapons using Weapon EXP to make them stronger and more effective in battles.</p>
+        </div>
+    </section>
+
+   
+
+
+
+<section id="weapons" class="weapons-section">
+    
+    
+    <!-- swords -->
+    <div class="weapon-container sword-bg">
+        <div class="weapon-content left">
+            <h3 class="weapon-name sword">SWORDS</h3>
+            <p class="weapon-desc">Swords are lightweight, agile weapons ideal for quick attacks and combos. They offer high attack speed and are great for mobility-focused characters.</p>
+
+            <ul class="weapon-info">
+                <li><strong>Damage Type:</strong> Physical</li>
+                <li><strong>Best For:</strong> DPS, Sub-DPS</li>
+                <li><strong>Examples:</strong> Freedom-Sworn, Primordial Jade Cutter</li>
+            </ul>
+
+            <div class="weapon-trivia">
+                <h5>Trivia</h5>
+                <p>Swords are the most common weapon type in Genshin Impact, used by many popular characters like Jean and Kaeya.</p>
+            </div>
+        </div>
+
+        <div class="weapon-image">
+            <img src="weapons/UI_GachaTypeIcon_Sword-Picsart-AiImageEnhancer.png" alt="Sword Icon">
+        </div>
+    </div>
+
+
+
+
+
+    <!-- claymores -->
+    <div class="weapon-container claymore-bg">
+        <div class="weapon-image">
+            <img src="weapons/UI_GachaTypeIcon_Claymore-Picsart-AiImageEnhancer.png" alt="Claymore Icon">
+        </div>
+
+        <div class="weapon-content right">
+            <h3 class="weapon-name claymore">CLAYMORES</h3>
+            <p class="weapon-desc">Claymores are heavy two-handed swords that deal massive damage in wide swings. They excel in crowd control and burst damage.</p>
+
+            <ul class="weapon-info">
+                <li><strong>Damage Type:</strong> Physical</li>
+                <li><strong>Best For:</strong> Main DPS</li>
+                <li><strong>Examples:</strong> Wolf's Gravestone, Skyward Pride</li>
+            </ul>
+
+            <div class="weapon-trivia">
+                <h5>Trivia</h5>
+                <p>Claymores require strength to wield, making them perfect for tanky characters like Diluc and Beidou.</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!-- polearms -->
+    <div class="weapon-container polearm-bg">
+        <div class="weapon-content left">
+            <h3 class="weapon-name polearm">POLEARMS</h3>
+            <p class="weapon-desc">Polearms are long-range spears that provide excellent reach and charged attacks. They balance offense and defense with plunging attacks.</p>
+
+            <ul class="weapon-info">
+                <li><strong>Damage Type:</strong> Physical</li>
+                <li><strong>Best For:</strong> DPS, Support</li>
+                <li><strong>Examples:</strong> Staff of Homa, Primordial Jade Winged-Spear</li>
+            </ul>
+
+            <div class="weapon-trivia">
+                <h5>Trivia</h5>
+                <p>Polearms are inspired by traditional Chinese spears and are used by characters like Xiao and Hu Tao.</p>
+            </div>
+        </div>
+
+        <div class="weapon-image">
+            <img src="weapons/UI_GachaTypeIcon_Pole-Picsart-AiImageEnhancer.png" alt="Polearm Icon">
+        </div>
+    </div>
+
+
+
+
+
+    <!-- catalysts -->
+    <div class="weapon-container catalyst-bg">
+        <div class="weapon-image">
+            <img src="weapons/UI_GachaTypeIcon_Catalyst-Picsart-AiImageEnhancer.png" alt="Catalyst Icon">
+        </div>
+
+        <div class="weapon-content right">
+            <h3 class="weapon-name catalyst">CATALYSTS</h3>
+            <p class="weapon-desc">Catalysts are magical books or orbs that focus on elemental damage and support. They have long range and are perfect for mages.</p>
+
+            <ul class="weapon-info">
+                <li><strong>Damage Type:</strong> Elemental</li>
+                <li><strong>Best For:</strong> Support, Burst DPS</li>
+                <li><strong>Examples:</strong> Lost Prayer to the Sacred Winds, Skyward Atlas</li>
+            </ul>
+
+            <div class="weapon-trivia">
+                <h5>Trivia</h5>
+                <p>Catalysts are the least physical weapon type, relying on magic, and are used by characters like Nahida and Mona.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- bows -->
+    <div class="weapon-container bow-bg">
+        <div class="weapon-content left">
+            <h3 class="weapon-name bow">BOWS</h3>
+            <p class="weapon-desc">Bows are ranged weapons that excel in charged shots and area damage. They offer mobility and are great for kiting enemies.</p>
+
+            <ul class="weapon-info">
+                <li><strong>Damage Type:</strong> Physical</li>
+                <li><strong>Best For:</strong> DPS, Sub-DPS</li>
+                <li><strong>Examples:</strong> Amos' Bow, Thundering Pulse</li>
+            </ul>
+
+            <div class="weapon-trivia">
+                <h5>Trivia</h5>
+                <p>Bows allow for precise aiming and are used by archers like Ganyu and Yoimiya for high-damage shots.</p>
+            </div>
+        </div>
+
+        <div class="weapon-image">
+            <img src="weapons/UI_GachaTypeIcon_Bow-Picsart-AiImageEnhancer.png" alt="Bow Icon">
+        </div>
+    </div>
+
+
+
+
+
+
+
+ 
+
+    <!-- footer -->
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="https://genshin.hoyoverse.com/en/company/privacy">Privacy Policy</a>
+            <a href="https://genshin.hoyoverse.com/en/company/terms">Terms</a>
+            <a href="https://www.hoyoverse.com/en-us/about-us?utm_source=genshin&utm_medium=footer">About HoYoLab</a>
+            <a href="https://cs.hoyoverse.com/static/hoyoverse-new-csc-service-hall-fe/index.html?page_id=19&login_type=visitor&game_biz=platform_hyvpass&lang=en-us&utm_source=genshin&utm_medium=footer">Help Center</a>
+        </div>
+        <div class="esrb">
+            <img src="img/esrb.png" alt="ESRB">
+        </div>
+        <div class="logos">
+            <img src="logo/logo-genshin.png" alt="Genshin Impact Logo">
+            <img src="logo/hoyoverse.png" alt="HoYoVerse Logo">
+        </div>
+        <p class="copyright">© 2025 COGNOSPHERE. All Rights Reserved. <br> Genshin Impact and all related assets, images, characters, and trademarks belong to HoYoverse. </p>
+        <p class="credits">Website created by <a href="https://www.instagram.com/vulturedvin/"><em>@vulturedvin</em></a> on IG</p>
+    </div>
+</footer>
+
+
+
+    <!-- scripts -->
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+            $('.tabs').tabs();
+            $('.dropdown-trigger').dropdown();
+            const audio = $('#bgMusic')[0];
+            const toggleBtn = $('#toggleBtn');
+            toggleBtn.on('click', function() {
+                if (audio.paused) {
+                    audio.play();
+                    toggleBtn.find('i').text('not_interested');
+                } else {
+                    audio.pause();
+                    toggleBtn.find('i').text('music_note');
+                }
+            });
+            document.getElementById('bgMusic').volume = 0.5;
+        });
+    </script>
+</body>
+</html>

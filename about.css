@@ -1,0 +1,456 @@
+@font-face {
+    font-family: 'Basta';
+    src: url(font/zh-cn.ttf);
+}
+@font-face {
+    font-family: 'Genshin';
+    src: url(font/genshin-impact-drip-font.ttf);
+}
+
+body {
+    font-family: 'Basta';
+    color: white;
+    background: #000;
+}
+
+html {
+    cursor: url(cursor/genshin_cursor.cur), auto;
+}
+
+/* nav bar */
+.nav {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.653));
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
+    height: 70px;
+}
+
+.nav-wrapper {
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav-wrapper :hover {
+    cursor: url(cursor/genshin_link.cur), pointer;
+    color: #FFC300;
+}
+
+.nav-wrapper .dropdown-content {
+    margin-top: 60px;
+    transform: translateY(-40%);
+    background-color: rgb(226, 226, 226);
+}
+
+.brand-logo img.logo {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.dropdown-content li a {
+    color: #000;
+}
+
+#toggleBtn {
+    background-color: rgba(0, 0, 0, 0.499);
+    color: white;
+    border-radius: 8px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+
+
+.banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.863);
+}
+
+.banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner h1 {
+    margin-top: 20%;
+    font-size: 5rem;
+    font-family: 'Genshin';
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20%;
+    display: inline-block;
+    background-color: #00000082;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.static-bg {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(background/domain.png) center center / cover no-repeat; 
+    z-index: -1;
+}
+
+.feature-block {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.31));
+    background-size: cover;
+    background-position: center;
+    margin: 5% 5%;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+
+    
+}
+
+.feature-content {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 50px;
+    
+}
+
+.feature-content h2 {
+    font-family: 'Genshin';
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.feature-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature-image {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+#world .feature-content,
+#elements .feature-content {
+    padding-left: 50px;
+    padding-right: 0;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    z-index: 2;
+    background: #000;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: #ffae19;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    cursor: url(cursor/genshin_link.cur), pointer;
+}
+
+.esrb {
+    margin: 20px 0;
+}
+
+.esrb img {
+    width: 200px;
+    height: auto;
+}
+
+.trademarks {
+    font-size: 12px;
+    color: #ccc;
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.logos {
+    margin: 20px 0;
+}
+
+.logos img {
+    width: 200px;
+    margin: 0 20px;
+}
+
+.copyright {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.credits {
+    font-size: 12px;
+    color: #ccc;
+    margin: 10px 0 0 0;
+}
+.credits a{
+    font-size: 12px;
+    color: #ccc;
+    cursor: url(cursor/genshin_link.cur), pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 960px) {
+    .feature-image {
+        max-width: 100%;
+        margin-top: 20px;
+        order: -1; 
+    }
+    #world .feature-content, #elements .feature-content {
+        padding-left: 0px;
+    }
+    .feature-content h2 {
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
+    .feature-block {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 2%;
+        gap: 20px; 
+    }
+    .feature-content {
+        max-width: 100%;
+        padding: 0;
+        order: 1; 
+    }
+    .feature-content h2 {
+        font-size: 2.5rem;
+    }
+    .feature-content p {
+        font-size: 1.1rem;
+    }
+    .banner h1 {
+        font-size: 5.5rem;
+        margin-top: 35%;
+    }
+    .banner p {
+        width: 70%;
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .feature-content h2 {
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .feature-content p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    .feature-block {
+        padding: 0 1%;
+        gap: 15px;
+    }
+    .feature-content {
+        order: 1; 
+    }
+    .feature-image {
+        order: -1; 
+        max-width: 95%;
+        margin-top: 20px;
+    }
+    .feature-content h2 {
+        font-size: 2rem;
+    }
+    .feature-content p {
+        font-size: 1rem;
+    }
+    .banner h1 {
+        font-size: 3.5rem;
+        margin-top: 25%;
+    }
+    .banner p {
+        width: 80%;
+        font-size: 1rem;
+        margin-bottom: 25%;
+    }
+    #world .feature-content, #elements .feature-content {
+        padding-left: 0px;
+    }
+    .esrb img {
+        width: 200px;
+    }
+    .trademarks {
+        font-size: 11px;
+        max-width: 90%;
+    }
+    .logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logos img {
+        width: 250px;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .feature-block {
+        padding: 0 0.5%;
+        gap: 10px;
+        margin: 10% 10%;
+    }
+    #world .feature-content, #elements .feature-content {
+        padding-left: 0px;
+    }
+    .feature-image {
+        order: -1; 
+        margin: 10px 10px;
+        max-width: 90%;
+    }
+    .feature-content h2 {
+        font-size: 1.8rem;
+        margin: 5px 10px;
+    }
+    .feature-content p {
+        font-size: 0.9rem;
+        margin: 5px 10px;
+    }
+    .banner h1 {
+        font-size: 3rem;
+        margin-top: 30%;
+    }
+    .banner p {
+        width: 90%;
+        font-size: 0.9rem;
+        margin-bottom: 30%;
+    }
+        .footer-links a {
+        font-size: 11px;
+    }
+    .esrb img {
+        width: 150px;
+    }
+    .trademarks {
+        font-size: 10px;
+        max-width: 95%;
+    }
+    .logos img {
+        width: 200px;
+        margin: 8px 0;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+    .credits {
+        font-size: 11px;
+    }
+    
+}

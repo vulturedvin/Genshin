@@ -1,0 +1,632 @@
+@font-face {
+    font-family: 'Basta';
+    src: url(font/zh-cn.ttf);
+}
+@font-face {
+    font-family: 'Genshin';
+    src: url(font/genshin-impact-drip-font.ttf);
+}
+
+body {
+    font-family: 'Basta';
+    color: #fff; 
+    background: #000; 
+}
+
+html {
+    cursor: url(cursor/genshin_cursor.cur), auto;
+}
+
+/* nav bar */
+.nav {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.653));
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
+    height: 70px;
+}
+
+.nav-wrapper {
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav-wrapper :hover {
+    cursor: url(cursor/genshin_link.cur), pointer;
+    color: #FFC300; /* Gold hover */
+}
+
+.nav-wrapper .dropdown-content {
+    margin-top: 60px;
+    transform: translateY(-40%);
+    background-color: rgb(226, 226, 226);
+}
+
+.brand-logo img.logo {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.dropdown-content li a {
+    color: #000;
+}
+
+#toggleBtn {
+    background-color: rgba(0, 0, 0, 0.499);
+    color: white;
+    border-radius: 8px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+/* banner */
+.banner {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.863);
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.banner h1 {
+    font-size: 5rem;
+    margin-top: 14%;
+    font-family: 'Genshin';
+}
+.banner p {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.2rem;
+    display: inline-block;
+    background-color: #00000082;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.31));
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* elements section */
+.elements-section {
+    position: relative;
+    padding: 60px 0;
+    background: url(background/sum.jpg) center center / cover no-repeat;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+.elements-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    background:  linear-gradient(to top, rgba(0, 0, 0, 0.668), rgba(0, 0, 0, 0.2)); 
+    z-index: 1;
+}
+
+.elements-title {
+    position: relative;
+    z-index: 2;
+    font-family: 'Genshin';
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(173, 173, 173, 0.538);
+}
+
+.elements-intro {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+/* element containers */
+.element-container {
+    position: relative;
+    z-index: 2; 
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    filter: drop-shadow(0 0 5px #09090942);
+}
+
+.element-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(placeholder/element-bg.jpg) center center / cover no-repeat;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.element-container > * {
+    position: relative;
+    z-index: 2;
+}
+
+.element-container:nth-child(odd) .element-content {
+    order: 1;
+}
+.element-container:nth-child(odd) .element-image {
+    order: 2;
+}
+.element-container:nth-child(even) .element-content {
+    order: 2;
+}
+.element-container:nth-child(even) .element-image {
+    order: 1;
+}
+
+
+
+.element-content {
+    flex: 1;
+    max-width: 500px;
+    
+}
+
+.element-name {
+    font-family: 'Genshin';
+    font-size: 4rem;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    
+}
+
+.anemo { 
+    color: #63e9cc;
+    filter: drop-shadow(0 0 3px#32d6b3d3) 
+}
+.geo { 
+    color: #e9ad2a;
+    filter: drop-shadow(0 0 3px #e9ad2a);
+}
+.electro { 
+    color: #a96bf7; 
+    filter: drop-shadow(0 0 3px #a96bf7);
+    
+}
+.dendro { 
+    color: #7edf58;
+    filter: drop-shadow(0 0 3px #7edf58); 
+}
+.hydro { 
+    color: #3d7ae0;
+    filter: drop-shadow(0 0 3px #3d7ae0); 
+}
+.pyro { 
+    color: #ee462c;
+    filter: drop-shadow(0 0 3px #ee462c); 
+}
+.cryo { 
+    color: #6ec9f5;
+    filter: drop-shadow(0 0 3px #6ec9f5); 
+}
+
+.element-desc {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    filter: drop-shadow(0 0 2px #09090942);
+}
+
+.element-info li {
+    margin: 5px 0;
+    filter: drop-shadow(0 0 2px #0909094a);
+    
+    margin-left: 30px;
+}
+
+.element-trivia {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    
+    
+}
+
+.element-trivia h5 {
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 2px #09090947);
+}
+
+.element-image img {
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    filter: drop-shadow(0 0 2px #09090942);
+}
+.element-image {
+    flex: 0 0 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.element-image:hover {
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.386));
+    transform: scale(1.05);
+}
+
+
+
+/* footer */
+footer {
+    background: #000;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: #ffae19;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    cursor: url(cursor/genshin_link.cur), pointer;
+}
+
+.esrb {
+    margin: 20px 0;
+}
+
+.esrb img {
+    width: 200px;
+    height: auto;
+}
+
+.trademarks {
+    font-size: 12px;
+    color: #ccc;
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.logos {
+    margin: 20px 0;
+}
+
+.logos img {
+    width: 200px;
+    margin: 0 20px;
+}
+
+.copyright {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.credits {
+    font-size: 12px;
+    color: #ccc;
+    margin: 10px 0 0 0;
+}
+.credits a{
+    font-size: 12px;
+    color: #ccc;
+    cursor: url(cursor/genshin_link.cur), pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px) {
+    .element-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .element-content {
+        max-width: none;
+    }
+    .element-image img {
+        width: 150px;
+        height: 150px;
+    }
+    .element-container {
+        flex-direction: column; 
+        text-align: center;
+        width: 80%; 
+        padding: 30px;
+        gap: 20px;
+    }
+    .element-container .element-image {
+        order: -1 !important; 
+    }
+    .element-container .element-content {
+        order: 1 !important; 
+    }
+    .element-content {
+        max-width: none;
+    }
+    .element-name {
+        font-size: 4rem; 
+    }
+    .element-image img {
+        width: 400px; 
+        height: 400px;
+    }
+    .element-desc {
+        font-size: 1.2rem; 
+        padding: 0 30px;
+    }
+    .element-info li {
+        margin-left: 20px;
+        font-size: 1.1rem;
+    }
+    .elements-title {
+        font-size: 3rem; 
+    }
+    .elements-intro {
+        font-size: 1.1rem;
+    }
+    .elements-section {
+        background-size: cover; 
+        background-position: center;
+    }
+    .element-trivia{
+        font-size: 1.1rem; 
+        padding: 0 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .elements-section {
+        width: 95%;
+    }
+    .element-container {
+        padding: 20px;
+    }
+    .element-name {
+        font-size: 2rem;
+    }
+    .banner h1{
+        margin-top: 25%;
+        font-size:4rem;
+    }
+    .banner p{
+        margin: 20px 30px;
+        font-size:1.3rem;
+    }
+    .elements-section {
+        width: 100%;
+        padding: 40px 0;
+        background-size: cover; 
+        background-position: center;
+    }
+    .element-container {
+        width: 90%;
+        padding: 20px;
+        gap: 15px;
+    }
+    .element-container .element-image {
+        order: -1 !important; 
+    }
+    .element-container .element-content {
+        order: 1 !important; 
+    }
+    .element-name {
+        font-size: 2.5rem; 
+    }
+    .element-image img {
+        width: 250px; 
+        height: 250px;
+    }
+    .element-desc {
+        font-size: 0.9rem;
+    }
+    .element-info li {
+        margin-left: 15px;
+        font-size: 0.85rem;
+    }
+    .element-trivia h5 {
+        font-size: 1rem;
+    }
+    .elements-title {
+        font-size: 2rem;
+    }
+    .elements-intro {
+        font-size: 0.9rem;
+    }
+    .esrb img {
+        width: 200px;
+    }
+    .trademarks {
+        font-size: 11px;
+        max-width: 90%;
+    }
+    .logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logos img {
+        width: 250px;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .banner h1{
+        margin-top: 40%;
+        font-size:3rem;
+    }
+    .banner p{
+        margin: 10px 20px;
+        font-size:1rem;
+    }
+    .element-container {
+        width: 80%;
+        padding: 15px;
+        gap: 10px;
+        margin: 20px auto;
+    }
+    .element-container .element-image {
+        order: -1 !important; 
+    }
+    .element-container .element-content {
+        order: 1 !important; 
+    }
+    .element-name {
+        font-size: 3.5rem; 
+        letter-spacing: 2px;
+        transform: translateY(-20px);
+    }
+    .element-image img {
+        width: 300px; 
+        height: 300px;
+    }
+
+    .element-desc {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    .element-info li {
+        margin-left: 10px;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+    .element-trivia {
+        margin-top: 10px;
+        padding-top: 5px;
+    }
+    .element-trivia p {
+        font-size: 1rem;
+    }
+    .element-trivia h5 {
+        font-size: 1.3rem;
+    }
+    .elements-title {
+        font-size: 1.8rem;
+    }
+    .elements-intro {
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+    .elements-section {
+        background-size: cover; 
+        background-position: center;
+    }
+    .footer-links a {
+        font-size: 12px;
+    }
+    .esrb img {
+        width: 150px;
+    }
+    .logos img {
+        width: 200px;
+        margin: 8px 0;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+    .credits {
+        font-size: 11px;
+    }
+}
+

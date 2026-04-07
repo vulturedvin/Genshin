@@ -1,0 +1,598 @@
+@font-face {
+    font-family: 'Basta';
+    src: url(font/zh-cn.ttf);
+}
+@font-face {
+    font-family: 'Genshin';
+    src: url(font/genshin-impact-drip-font.ttf);
+}
+
+body {
+    font-family: 'Basta';
+    color: #fff; /* White text for black theme */
+    background: #000; /* Black background */
+}
+
+html {
+    cursor: url(cursor/genshin_cursor.cur), auto;
+}
+
+/* nav bar */
+.nav {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.653));
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
+    height: 70px;
+}
+
+.nav-wrapper {
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav-wrapper :hover {
+    cursor: url(cursor/genshin_link.cur), pointer;
+    color: #FFC300; /* Gold hover */
+}
+
+.nav-wrapper .dropdown-content {
+    margin-top: 60px;
+    transform: translateY(-40%);
+    background-color: rgb(226, 226, 226);
+}
+
+.brand-logo img.logo {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.dropdown-content li a {
+    color: #000;
+}
+
+#toggleBtn {
+    background-color: rgba(0, 0, 0, 0.499);
+    color: white;
+    border-radius: 8px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+/* banner */
+.banner {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.863);
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.banner h1 {
+    font-size: 5rem;
+    margin-top: 14%;
+    font-family: 'Genshin';
+}
+.banner p {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.2rem;
+    display: inline-block;
+    background-color: #00000082;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.31));
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* weapons section */
+.weapons-section {
+    position: relative;
+    padding: 60px 0;
+    width: 100%;
+    margin: 0 auto;
+    background: url(background/lilili.png) center center / cover no-repeat;
+    color: white;
+    overflow: hidden;
+    min-height: 100vh; 
+    height: auto;
+}
+
+.weapons-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.584), rgba(0, 0, 0, 0.2)); 
+    z-index: 1;
+    height: 100%;
+}
+
+
+.weapons-title {
+    position: relative;
+    z-index: 2;
+    font-family: 'Genshin';
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(173, 173, 173, 0.538);
+}
+
+.weapons-intro {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+/* weapon containers */
+.weapon-container {
+    position: relative;
+    z-index: 2; 
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    filter: drop-shadow(0 0 5px #09090942);
+}
+
+.weapon-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.584), rgba(0, 0, 0, 0.2));
+    z-index: 1;
+}
+
+.weapon-container > * {
+    position: relative;
+    z-index: 2;
+}
+
+.weapon-container:nth-child(odd) .weapon-content {
+    order: 1;
+}
+.weapon-container:nth-child(odd) .weapon-image {
+    order: 2;
+}
+.weapon-container:nth-child(even) .weapon-content {
+    order: 2;
+}
+.weapon-container:nth-child(even) .weapon-image {
+    order: 1;
+}
+
+.weapon-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.weapon-name {
+    font-family: 'Genshin';
+    font-size: 4rem;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 1px #09090938);
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.weapon-desc {
+    opacity: 0.9;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 2px #09090942);
+}
+
+.weapon-info li {
+    margin: 5px 0;
+    filter: drop-shadow(0 0 2px #0909094a);
+    margin-left: 30px;
+    opacity: 0.8;
+}
+
+.weapon-trivia {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.weapon-trivia h5 {
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 2px #09090947);
+}
+
+.weapon-image img {
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    filter: drop-shadow(0 0 2px #09090942);
+}
+.weapon-image {
+    flex: 0 0 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.weapon-image:hover {
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.386));
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    transform: translateY(18%);
+    position: relative;
+    z-index: 10; 
+    background: #000 !important; 
+    padding: 40px 0 20px 0;
+    text-align: center;
+    color: #fff;
+    clear: both; 
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: #ffae19;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    cursor: url(cursor/genshin_link.cur), pointer;
+}
+
+.esrb {
+    margin: 20px 0;
+}
+
+.esrb img {
+    width: 200px;
+    height: auto;
+}
+
+.trademarks {
+    font-size: 12px;
+    color: #ccc;
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.logos {
+    margin: 20px 0;
+}
+
+.logos img {
+    width: 200px;
+    margin: 0 20px;
+}
+
+.copyright {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.credits {
+    font-size: 12px;
+    color: #ccc;
+    margin: 10px 0 0 0;
+}
+.credits a{
+    font-size: 12px;
+    color: #ccc;
+    cursor: url(cursor/genshin_link.cur), pointer;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 960px) {
+    .weapon-container {
+        flex-direction: column; 
+        text-align: center;
+        width: 80%; 
+        padding: 30px;
+        gap: 20px;
+    }
+    .weapon-container .weapon-image {
+        order: -1 !important; 
+    }
+    .weapon-container .weapon-content {
+        order: 1 !important; 
+    }
+    .weapon-content {
+        max-width: none;
+    }
+    .weapon-name {
+        font-size: 3rem; 
+    }
+    .weapon-image img {
+        width: 350px; 
+        height: 350px;
+    }
+    .weapon-desc {
+        font-size: 1rem;
+        padding: 0 30px;
+    }
+    .weapon-info li {
+        margin-left: 20px;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+    .weapons-title {
+        font-size: 2.5rem; 
+    }
+    .weapons-intro {
+        font-size: 1.1rem;
+        padding: 0 30px;
+    }
+    .weapon-intro p {
+        font-size: 1.1rem;
+        padding: 0 30px;
+    }
+    .weapons-section {
+        background-size: cover; 
+        background-position: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .banner h1{
+        margin-top: 25%;
+        font-size:4rem;
+    }
+    .banner p{
+        margin: 20px 30px;
+        font-size:1.3rem;
+    }
+    .weapons-section {
+        width: 100%;
+        padding: 40px 0;
+        background-size: cover;
+        background-position: center;
+    }
+    .weapon-container {
+        width: 80%;
+        padding: 20px;
+        gap: 15px;
+    }
+    .weapon-container .weapon-image {
+        order: -1 !important; 
+    }
+    .weapon-container .weapon-content {
+        order: 1 !important; 
+    }
+    .weapon-name {
+        font-size: 2.5rem; 
+    }
+    .weapon-image img {
+        width: 300px; 
+        height: 300px;
+    }
+    .weapon-desc {
+        font-size: 1rem;
+    }
+    .weapon-info li {
+        margin-left: 15px;
+        font-size: 0.85rem;
+    }
+    .weapon-trivia h5 {
+        font-size: 1.3rem;
+    }
+    .weapon-trivia p {
+        font-size: 1rem;
+        padding: 0 30px;
+    }
+    .weapons-title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .weapons-intro {
+        font-size: 0.9rem;
+    }
+    footer {
+        transform: translateY(13%);
+    }
+    .esrb img {
+        width: 200px;
+    }
+    .logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logos img {
+        width: 250px;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .banner h1{
+        margin-top: 40%;
+        font-size:3rem;
+    }
+    .banner p{
+        margin: 10px 20px;
+        font-size:1rem;
+    }
+    .weapon-container {
+        width: 80%;
+        padding: 15px;
+        gap: 10px;
+        margin: 20px auto;
+        height: 600px;
+    }
+    .weapon-image {
+        flex: 0;
+    }
+    .weapon-container .weapon-image {
+        order: -1 !important; 
+    }
+    .weapon-container .weapon-content {
+        order: 1 !important; 
+    }
+    .weapon-name {
+        font-size: 2rem; 
+        letter-spacing: 2px;
+    }
+    .weapon-image img {
+        width: 200px; 
+        height: 200px;
+    }
+    .weapon-desc {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+    .weapon-info li {
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
+    .weapon-trivia {
+        margin-top: 10px;
+        padding-top: 5px;
+    }
+    .weapon-trivia h5 {
+        font-size: 0.9rem;
+    }
+    .weapon-trivia p {
+        font-size: 0.8rem;
+    }
+    .weapons-title {
+        font-size: 1.8rem;
+    }
+    .weapons-intro {
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+    .weapons-section {
+        background-size: cover; 
+        background-position: center;
+    }
+    footer {
+        transform: translateY(10%);
+    }
+    footer .footer-links a {
+        font-size: 12px;
+    }
+    footer .esrb img {
+        width: 150px;
+    }
+    footer .logos img {
+        width: 200px;
+        margin: 8px 0;
+    }
+    footer .copyright {
+        font-size: 10px;
+    }
+    footer .credits {
+        font-size: 10px;
+    }
+}

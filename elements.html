@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="elements.css">
+    <link rel="icon" href="logo/primogem.png">
+    <title>Elements – Genshin Impact</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <header>
+        <nav class="nav-wrapper nav">
+            <div class="container">
+                <a href="home.html" class="brand-logo">
+                    <img src="logo/logo-genshin.png" alt="Genshin Impact Logo" class="logo">
+                </a>
+
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-gameplay">Gameplay<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-gameplay" class="dropdown-content">
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                        <li><a href="weapons.html">Weapons</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-world">World<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-world" class="dropdown-content">
+                        <li><a href="regions.html">Regions</a></li>
+                        <li><a href="lore.html">Lore</a></li>
+                        <li><a href="exploration.html">Exploration</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-about">About<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-about" class="dropdown-content">
+                        <li><a href="about.html">About the Game</a></li>
+                        <li><a href="play.html">Play Now</a></li>
+                    </ul>
+
+                    <audio id="bgMusic" src="music/dusk.mp3" autoplay loop></audio>
+                    <a id="toggleBtn" class="btn waves-effect waves-light">
+                        <i class="material-icons center">music_note</i>
+                    </a>
+                </ul>
+                <ul class="sidenav grey darken-4" id="mobile-menu">
+                    <li><a href="home.html" class="white-text" style="margin-top: 15%;">Home</a></li>
+                    <li><a href="news.html" class="white-text" >News</a></li>
+                    <li><a href="characters.html" class="white-text">Characters</a></li>
+                    <li><a href="elements.html" class="white-text">Elements</a></li>
+                    <li><a href="weapons.html" class="white-text">Weapons</a></li>
+                    <li><a href="regions.html" class="white-text">Regions</a></li>
+                    <li><a href="lore.html" class="white-text">Lore</a></li>
+                    <li><a href="exploration.html" class="white-text">Exploration</a></li>
+                    <li><a href="about.html" class="white-text">About the Game</a></li>
+                    <li><a href="play.html" class="white-text">Play Now</a></li>
+                    <li><img style=" max-width: 100%; margin-top: 30%; " src="logo/logo-genshin.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+
+    <section class="banner">
+        <img src="background/element-card.png"></img>
+        <div class="banner-overlay">
+            <h1>Elements</h1>
+            <p class="center elements-intro">
+        The seven elements shape the world of Teyvat. Each element is linked to an Archon, a nation, and a unique set of reactions that define combat and exploration.
+    </p>
+        </div>
+    </section>
+
+   
+
+
+
+<section id="elements" class="elements-section">
+    
+    
+    <!-- anemo -->
+    <div class="element-container anemo-bg">
+        <div class="element-content left">
+            <h3 class="element-name anemo">ANEMO</h3>
+            <p class="element-desc">Anemo represents freedom, movement, and the natural flow of the wind across Teyvat. It focuses on crowd control and swirl-based reactions that enhance other elements.</p>
+
+            <ul class="element-info">
+                <li><strong>Region:</strong> Mondstadt</li>
+                <li><strong>Archon:</strong> Barbatos</li>
+                <li><strong>Oculus:</strong> Anemoculus</li>
+                <li><strong>Gem:</strong> Vayuda Turquoise</li>
+            </ul>
+
+            <div class="element-trivia">
+                <h5>Trivia</h5>
+                <p>Anemo is the first element the Traveler resonates with at the beginning of the story. Mondstadt’s culture of freedom reflects the Anemo Archon’s passive and hands-off leadership.</p>
+            </div>
+        </div>
+
+        <div class="element-image">
+            <img src="genshin elements/no-anemo.png" alt="Anemo Icon">
+        </div>
+    </div>
+
+    <!-- geo -->
+    <div class="element-container geo-bg">
+        <div class="element-image">
+            <img src="genshin elements/no-geo.png" alt="Geo Icon">
+        </div>
+
+        <div class="element-content right">
+            <h3 class="element-name geo">GEO</h3>
+            <p class="element-desc">Geo symbolizes stability and the unbreakable strength of the earth. Its mechanics revolve around shields, durability, and fortified structures.</p>
+
+            <ul class="element-info">
+                <li><strong>Region:</strong> Liyue</li>
+                <li><strong>Archon:</strong> Morax</li>
+                <li><strong>Oculus:</strong> Geoculus</li>
+                <li><strong>Gem:</strong> Prithiva Topaz</li>
+            </ul>
+
+            <div class="element-trivia">
+                <h5>Trivia</h5>
+                <p>Geo’s reactions are more defensive, making it great for survival and consistent damage. Liyue’s traditions and architecture are shaped heavily by the Geo Archon’s emphasis on contracts and order.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- electro -->
+    <div class="element-container electro-bg">
+        <div class="element-content left">
+            <h3 class="element-name electro">ELECTRO</h3>
+            <p class="element-desc">Electro channels energy, ambition, and the pursuit of eternity. Its reactions revolve around continuous damage and rapid energy generation.</p>
+
+            <ul class="element-info">
+                <li><strong>Region:</strong> Inazuma</li>
+                <li><strong>Archon:</strong> Beelzebul</li>
+                <li><strong>Oculus:</strong> Electroculus</li>
+                <li><strong>Gem:</strong> Vajrada Amethyst</li>
+            </ul>
+
+            <div class="element-trivia">
+                <h5>Trivia</h5>
+                <p>The symbol of the element Electro is likely based on Mitsudomoe, a symbol often found in traditional Japanese heraldry. <br> Electro’s mechanics reward fast-paced combat and skill usage. Inazuma’s strict laws reflect the Archon’s desire to maintain an unchanging eternal nation.</p>
+            </div>
+        </div>
+
+        <div class="element-image">
+            <img src="genshin elements/no-electro.png" alt="Electro Icon">
+        </div>
+    </div>
+
+    <!-- dendro -->
+    <div class="element-container dendro-bg">
+        <div class="element-image">
+            <img src="genshin elements/no-dendro.png" alt="Dendro Icon">
+        </div>
+
+        <div class="element-content right">
+            <h3 class="element-name dendro">DENDRO</h3>
+            <p class="element-desc">Dendro represents life, wisdom, and the natural cycle of growth and decay. Its reactions are some of the most powerful, creating chain effects that amplify multiple team roles.</p>
+
+            <ul class="element-info">
+                <li><strong>Region:</strong> Sumeru</li>
+                <li><strong>Archon:</strong> Buer</li>
+                <li><strong>Oculus:</strong> Dendroculus</li>
+                <li><strong>Gem:</strong> Nagadus Emerald</li>
+            </ul>
+
+            <div class="element-trivia">
+                <h5>Trivia</h5>
+                <p>Dendro is the newest playable element, introduced with Sumeru. Its reactions focus on chain effects that make it one of the strongest support elements in the game.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- hydro -->
+    <div class="element-container hydro-bg">
+        <div class="element-content left">
+            <h3 class="element-name hydro">HYDRO</h3>
+            <p class="element-desc">Hydro symbolizes adaptability, healing, and justice that flows through society. Its reactions create powerful healing and damage combos that fit many team styles.</p>
+
+            <ul class="element-info">
+                <li><strong>Region:</strong> Fontaine</li>
+                <li><strong>Archon:</strong> Focalors</li>
+                <li><strong>Oculus:</strong> Hydroculus</li>
+                <li><strong>Gem:</strong> Varunada Lazurite</li>
+            </ul>
+
+            <div class="element-trivia">
+                <h5>Trivia</h5>
+                <p>Hydro is central to Fontaine’s court system, where the law defines every aspect of life. Its connection to the Primordial Sea makes it one of the most ancient and mysterious elements in the lore.</p>
+            </div>
+        </div>
+
+        <div class="element-image">
+            <img src="genshin elements/no-hydro.png" alt="Hydro Icon">
+        </div>
+    </div>
+
+    <!-- pyro -->
+    <div class="element-container pyro-bg">
+        <div class="element-image">
+            <img src="genshin elements/no-pyro.png" alt="Pyro Icon">
+        </div>
+
+        <div class="element-content right">
+            <h3 class="element-name pyro">PYRO</h3>
+            <p class="element-desc">Pyro embodies passion, strength, and relentless destructive power. Its reactions often produce explosive damage, making it one of the most aggressive elements.</p>
+
+            <ul class="element-info">
+                <li><strong>Region:</strong> Natlan</li>
+                <li><strong>Archon:</strong> Haborym</li>
+                <li><strong>Oculus:</strong> Pyroculus</li>
+                <li><strong>Gem:</strong> Agnidus Agate</li>
+            </ul>
+
+            <div class="element-trivia">
+                <h5>Trivia</h5>
+                <p>Pyro has the largest number of strong DPS characters due to its high reaction multipliers. Natlan’s fiery culture and warrior traditions reflect the untamed nature of the Pyro element.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- cryo-->
+    <div class="element-container cryo-bg">
+        <div class="element-content left">
+            <h3 class="element-name cryo">CRYO</h3>
+            <p class="element-desc">Cryo represents clarity, endurance, and emotional restraint. Its reactions allow both high burst damage and powerful crowd control.</p>
+
+            <ul class="element-info">
+                <li><strong>Region:</strong> Snezhnaya</li>
+                <li><strong>Archon:</strong> Tsaritsa</li>
+                <li><strong>Oculus:</strong> Cryoculus</li>
+                <li><strong>Gem:</strong> Shivada Jade</li>
+            </ul>
+
+            <div class="element-trivia">
+                <h5>Trivia</h5>
+                <p>Cryo pairs extremely well with Hydro, enabling freeze teams that dominate enemy movement. Snezhnaya’s Cryo Archon leads the Fatui, making Cryo politically powerful throughout Teyvat.</p>
+            </div>
+        </div>
+
+        <div class="element-image">
+            <img src="genshin elements/no-cryo.png" alt="Cryo Icon">
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+ 
+
+    <!-- footer -->
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="https://genshin.hoyoverse.com/en/company/privacy">Privacy Policy</a>
+            <a href="https://genshin.hoyoverse.com/en/company/terms">Terms</a>
+            <a href="https://www.hoyoverse.com/en-us/about-us?utm_source=genshin&utm_medium=footer">About HoYoLab</a>
+            <a href="https://cs.hoyoverse.com/static/hoyoverse-new-csc-service-hall-fe/index.html?page_id=19&login_type=visitor&game_biz=platform_hyvpass&lang=en-us&utm_source=genshin&utm_medium=footer">Help Center</a>
+        </div>
+        <div class="esrb">
+            <img src="img/esrb.png" alt="ESRB">
+        </div>
+        <div class="logos">
+            <img src="logo/logo-genshin.png" alt="Genshin Impact Logo">
+            <img src="logo/hoyoverse.png" alt="HoYoVerse Logo">
+        </div>
+        <p class="copyright">© 2025 COGNOSPHERE. All Rights Reserved. <br> Genshin Impact and all related assets, images, characters, and trademarks belong to HoYoverse. </p>
+        <p class="credits">Website created by <a href="https://www.instagram.com/vulturedvin/"><em>@vulturedvin</em></a> on IG</p>
+    </div>
+</footer>
+
+
+
+    <!-- scripts -->
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+            $('.tabs').tabs();
+            $('.dropdown-trigger').dropdown();
+            const audio = $('#bgMusic')[0];
+            const toggleBtn = $('#toggleBtn');
+            toggleBtn.on('click', function() {
+                if (audio.paused) {
+                    audio.play();
+                    toggleBtn.find('i').text('not_interested');
+                } else {
+                    audio.pause();
+                    toggleBtn.find('i').text('music_note');
+                }
+            });
+            document.getElementById('bgMusic').volume = 0.5;
+        });
+    </script>
+</body>
+</html>

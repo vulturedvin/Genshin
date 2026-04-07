@@ -1,0 +1,749 @@
+@font-face {
+    font-family: 'Basta';
+    src: url(font/zh-cn.ttf);
+}
+@font-face {
+    font-family: 'Genshin';
+    src: url(font/genshin-impact-drip-font.ttf);
+}
+
+body {
+    font-family: 'Basta';
+    color: white;
+    background: #000000;
+}
+
+html {
+    cursor: url(cursor/genshin_cursor.cur), auto;
+}
+
+/* nav bar */
+.nav {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.653));
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
+    height: 70px;
+}
+
+.nav-wrapper {
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav-wrapper :hover {
+    cursor: url(cursor/genshin_link.cur), pointer;
+    color: #FFC300;
+}
+
+.nav-wrapper .dropdown-content {
+    margin-top: 60px;
+    transform: translateY(-40%);
+    background-color: rgb(226, 226, 226);
+}
+
+.brand-logo img.logo {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.dropdown-content li a {
+    color: #000;
+}
+
+#toggleBtn {
+    background-color: rgba(0, 0, 0, 0.499);
+    color: white;
+    border-radius: 8px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* banner */
+.banner {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.863);
+}
+
+.banner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.banner h1 {
+    font-size: 5rem;
+    margin-top: 12%;
+    font-family: 'Genshin';
+}
+
+.banner p {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.2rem;
+    display: inline-block;
+    background-color: #00000082;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.485), rgba(0, 0, 0, 0.31));
+    background-size: cover;
+    background-position: center;
+}
+
+.details {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    opacity: 0.9;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.character-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+.character-section .region {
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 15px #090909);
+}
+
+.character-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Genshin';
+    font-size: 5rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.character-section p.details {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.character-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Genshin';
+    font-size: 2.5rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+.section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.character-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.486), transparent);
+    z-index: 2;
+}
+
+.character-section .container {
+    position: relative;
+    z-index: 3;
+    padding: 50px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#mondstadt .section-bg {
+    background-image: url(regions/monstadt.jpg);
+}
+
+#liyue .section-bg {
+    background-image: url(regions/liyue.jpg);
+}
+
+#inazuma .section-bg {
+    background-image: url(regions/inazuma.jpg);
+}
+
+#sumeru .section-bg {
+    background-image: url(regions/sumeru.jpg);
+}
+
+#fontaine .section-bg {
+    background-image: url(regions/fontaine.jpg);
+}
+
+#natlan .section-bg {
+    background-image: url(regions/natlan.jpg);
+}
+
+#nod-krai .section-bg {
+    background-image: url(regions/nod-krai.jpg);
+}
+
+#snezhnaya .section-bg {
+    background-image: url(regions/snezhnaya.jpg);
+}
+
+
+.character-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: visible;
+    color: white;
+}
+
+.section-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url(regions/monstadt.jpg) center/cover no-repeat;
+    z-index: 1;
+}
+
+.character-section::before {
+    content:'';
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.73), transparent);
+    z-index:2;
+}
+
+.character-section .container {
+    position: relative;
+    z-index: 3;
+    padding: 50px 20px;
+}
+
+.character-section .region {
+    display: block;
+    margin: 0 auto;
+    width: 250px; height: 250px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 15px #090909);
+}
+
+.character-section h2 {
+    text-align: center;
+    font-family: 'Genshin';
+    font-size: 5rem;
+    text-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.details {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.container-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-overlay h2 {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.carousel {
+    height: 50%;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel .carousel-item {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
+.carousel .indicators {
+    top: 450px;
+}
+.carousel a {
+    text-decoration: none;
+    color: #000;
+}
+.carousel:hover a {
+    cursor: url(cursor/genshin_link.cur), pointer;
+}
+
+
+
+.news {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+
+.news h2 {
+    margin-top: 90px;
+    text-shadow: 0 0 20px #000;
+}
+
+.news .carousel {
+    width: 100%;           
+    height: 450px;        
+    margin-top: 20px;
+    overflow: visible;    
+}
+
+.news .carousel .carousel-item {
+    width: 600px !important;  
+    height: 450px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-card {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.385);
+    border: #ffffff34 solid 1px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #0000005e;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #ffffff55;
+}
+
+.news-card img {
+    width: 100%;
+    height: 60%;        
+    object-fit: cover;
+}
+
+.news-card h3 {
+    font-family: 'Genshin';
+    font-size: 2rem;
+    margin: 10px;
+    text-shadow: 0 0 10px #00000024;
+    color: white;
+}
+
+.news-card p {
+    padding: 0 20px;
+    margin: 10px;
+    font-size: 1rem;
+    opacity: 0.9;
+    color: rgb(217, 217, 217);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: #ffae19;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    cursor: url(cursor/genshin_link.cur), pointer;
+}
+
+.esrb {
+    margin: 20px 0;
+}
+
+.esrb img {
+    width: 200px;
+    height: auto;
+}
+
+.trademarks {
+    font-size: 12px;
+    color: #ccc;
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.logos {
+    margin: 20px 0;
+}
+
+.logos img {
+    width: 200px;
+    margin: 0 20px;
+}
+
+.copyright {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.credits {
+    font-size: 12px;
+    color: #ccc;
+    margin: 10px 0 0 0;
+}
+.credits a{
+    font-size: 12px;
+    color: #ccc;
+    cursor: url(cursor/genshin_link.cur), pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px) {
+    .banner h1{
+        margin-top: 20%;
+    }
+    .news {
+        height: 450px;
+    }
+    .news-card{
+        height: 400px;
+        width: 500px;
+    }
+    .carousel-item {
+        width: 250px;
+    }
+    .carousel-item img {
+        width: 500px;
+        height: 250px;
+    }
+    .carousel-item h3 {
+        font-size: 2rem;
+    }
+    .carousel-item p {
+        font-size: 0.9rem;
+    }
+    .character-section h2 {
+        font-size: 4rem;
+    }
+    .quick-links {
+        height: 450px;
+    }
+    .footer-links a {
+        margin: 0 10px;
+        font-size: 13px;
+    }
+    .esrb img {
+        width: 250px;
+    }
+    .logos img {
+        width: 200px;
+        margin: 0 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .banner h1{
+        margin-top: 25%;
+        font-size:3.8rem;
+    }
+    .banner p{
+        margin: 20px 30px;
+        font-size:1.1rem;
+    }
+    .news {
+        height: 350px;
+    }
+    .news .carousel .carousel-item {
+        width: 500px !important;  
+        height: 350px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+    .news-card{
+        height: 300px;
+        width: 400px;
+    }
+    
+    .character-section h2 {
+        font-size: 4rem;
+    }
+    .character-section .region {
+        height: 200px;
+        width: 200px;
+    }
+    .quick-links {
+        height: 400px;
+    }
+    .news .carousel {
+        gap: 10px;
+        margin-top: 0px;
+    }
+    .carousel-item {
+        width: 400px;
+    }
+    .carousel-item img {
+        width: 400px;
+        height: 180px;
+    }
+    .carousel-item h3 {
+        font-size: 1.7rem;
+        padding: 0 0;
+        margin: 5px 10px;
+
+    }
+    .carousel-item p {
+        font-size: 0.7rem;
+    }
+        .esrb img {
+        width: 200px;
+    }
+    .trademarks {
+        font-size: 11px;
+        max-width: 90%;
+    }
+    .logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logos img {
+        width: 250px;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .banner h1{
+        margin-top: 40%;
+        font-size:3rem;
+    }
+    .banner p{
+        margin: 10px 20px;
+        font-size:1rem;
+    }
+    .news {
+        height: 250px;
+    }
+    .news .carousel .carousel-item {
+        width: 350px !important;  
+        height: 200px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+    .news-card{
+        height: 200px;
+        width: 300px;
+    }
+    
+    .character-section h2 {
+        font-size: 3rem;
+    }
+    .character-section .region {
+        height: 200px;
+        width: 200px;
+    }
+    .quick-links {
+        height: 350px;
+    }
+    .carousel-item {
+        width: 150px;
+    }
+    .carousel-item img {
+        width: 300px;
+        height: 150px;
+    }
+    .carousel-item h3 {
+        font-size: 1.3rem;
+        transform: translateY(-7px);
+    }
+    .carousel-item p {
+        font-size: 0.1rem;
+        opacity: 0;
+    }
+    .footer-links a {
+        font-size: 11px;
+    }
+    .esrb img {
+        width: 150px;
+    }
+    .trademarks {
+        font-size: 10px;
+        max-width: 95%;
+    }
+    .logos img {
+        width: 200px;
+        margin: 8px 0;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+    .credits {
+        font-size: 11px;
+    }
+}

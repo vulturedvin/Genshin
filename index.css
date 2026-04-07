@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Basta';
+    src: url(/font/zh-cn.ttf);
+}
+
+body {
+    font-family: 'Basta';
+    background: white;
+    color: white;
+    overflow: hidden;
+}
+
+html {
+    cursor: url(cursor/genshin_cursor.cur), auto;
+}
+
+.genshin-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+.genshin-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    z-index: 1; 
+}
+
+.full-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10; 
+}
+
+.genshin-title {
+    font-size: 5rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    z-index: 100;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    opacity: 0.8;
+    margin-bottom: 40px;
+    z-index: 100;
+}
+
+.genshin-btn {
+    background: #00000074;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px #0000004d;
+    transition: all 0.3s ease;
+    z-index: 100;
+    line-height: 1.8rem;
+}
+
+.genshin-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    cursor: url(cursor/genshin_link.cur), pointer;
+    background-color: rgba(29, 29, 29, 0.721);
+
+}
+
+.hide {
+    display: none !important;
+}
+
+.loading-screen1 video{
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.elements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.element {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.5s ease;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: black;
+}
+
+.element img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.element.loaded {
+    opacity: 1;
+    transform: scale(1);
+    animation: glow 1s infinite alternate;
+}
+
+
+
+
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+    to { box-shadow: 0 0 20px rgba(255, 255, 255, 1); }
+}
+
+#loading-screen2 {
+    background: white;
+    color: black;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.elements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+
+.headphones {
+    position: absolute;
+    bottom: 160px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.headphones img {
+    height: 40px; 
+    width: 40px;
+    opacity: 0.8;
+}
+
+
+.subtitle {
+    position: absolute;
+    bottom: 90px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    opacity: 0.8;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 960px) {
+    .element img {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    }
+    .subtitle{
+        transform: translateX(-50%);
+    }
+    .headphones img {
+    height: 30px; 
+    width: 30px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .genshin-title{
+        font-size: 4rem;
+    }
+    .element img {
+    height: 60px;
+    width: 60px;
+   
+    }
+    .subtitle{
+        transform: translateX(-50%);
+    }
+    .headphones img {
+    height: 30px; 
+    width: 30px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .genshin-title {
+        font-size: 3rem;
+    }
+    .element img {
+    height: 30px;
+    width: 30px;
+    }
+    .elements-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0px;
+    margin: 30px 0;
+}
+    .subtitle{
+        transform: translateX(-50%);
+        font-size: 0.9rem;
+    }
+    .headphones img {
+    height: 20px; 
+    width: 20px;
+    }
+}

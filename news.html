@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="news.css">
+    <link rel="icon" href="logo/primogem.png">
+    <title>News – Genshin Impact</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <header>
+        <nav class="nav-wrapper nav">
+            <div class="container">
+                <a href="home.html" class="brand-logo">
+                    <img src="logo/logo-genshin.png" alt="Genshin Impact Logo" class="logo">
+                </a>
+
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-gameplay">Gameplay<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-gameplay" class="dropdown-content">
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                        <li><a href="weapons.html">Weapons</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-world">World<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-world" class="dropdown-content">
+                        <li><a href="regions.html">Regions</a></li>
+                        <li><a href="lore.html">Lore</a></li>
+                        <li><a href="exploration.html">Exploration</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-about">About<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-about" class="dropdown-content">
+                        <li><a href="about.html">About the Game</a></li>
+                        <li><a href="play.html">Play Now</a></li>
+                    </ul>
+
+                    <audio id="bgMusic" src="music/angel.mp3" autoplay loop></audio>
+                    <a id="toggleBtn" class="btn waves-effect waves-light">
+                        <i class="material-icons center">music_note</i>
+                    </a>
+                </ul>
+                <ul class="sidenav grey darken-4" id="mobile-menu">
+                    <li><a href="home.html" class="white-text" style="margin-top: 15%;">Home</a></li>
+                    <li><a href="news.html" class="white-text" >News</a></li>
+                    <li><a href="characters.html" class="white-text">Characters</a></li>
+                    <li><a href="elements.html" class="white-text">Elements</a></li>
+                    <li><a href="weapons.html" class="white-text">Weapons</a></li>
+                    <li><a href="regions.html" class="white-text">Regions</a></li>
+                    <li><a href="lore.html" class="white-text">Lore</a></li>
+                    <li><a href="exploration.html" class="white-text">Exploration</a></li>
+                    <li><a href="about.html" class="white-text">About the Game</a></li>
+                    <li><a href="play.html" class="white-text">Play Now</a></li>
+                    <li><img style=" max-width: 100%; margin-top: 30%; " src="logo/logo-genshin.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+
+    <section class="banner">
+        <img src="background/news-card.png"></img>
+        <div class="banner-overlay">
+            <h1>News and Latest Updates</h1>
+        </div>
+    </section>
+
+    <!-- news -->
+
+    <section class="news">
+        <img src="background/inazz.png" class="news-bg" alt="street">
+        <div class="container-overlay">
+            <h2>Latest Updates</h2>
+            <div class="carousel" id="news-carousel">
+                <div class="carousel-item">
+                    <div class="news-card">
+                        <a href="https://genshin.hoyoverse.com/en/news/detail/161317">
+                            <img src="news/duolingo.jpg" alt="News 1">
+                            <h3>The Genshin Impact × Duolingo collaboration starts on December 8!</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="news-card">
+                        <a href="https://genshin.hoyoverse.com/en/news/detail/161275">
+                            <img src="news/laluna.png" alt="News 1">
+                            <h3>"Song of the Welkin Moon: Interlude - A Nocturne of the Far North": Version "Luna III"</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="news-card">
+                        <a href="https://genshin.hoyoverse.com/en/news/detail/161137">
+                            <img src="news/newww.jpg" alt="News 1">
+                            <h3>Version "Luna III" Event Wishes Notice - Phase I</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="news-card">
+                        <a href="https://www.hoyolab.com/article/42482249">
+                            <img src="news/news2.jpg" alt="News 2">
+                            <h3>Unveiling "The Witch's Gift"!</h3>
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="news-card">
+                        <a href="https://genshin.hoyoverse.com/en/news/detail/161127">
+                            <img src="news/news3.jpg" alt="News 3">
+                            <h3>Genshin Impact December Calendar Wallpapers</h3>
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button id="news-prev"><i class="material-icons">chevron_left</i></button>
+                <button id="news-next"><i class="material-icons">chevron_right</i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- additional news section -->
+
+    <section class="additional-news">
+        
+        <div class="container">
+            <h2>More News</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <a href="https://www.hoyolab.com/article/42515832" class="news-link">
+                        <img src="news/news5.jpg" alt="News 4">
+                    </a>
+                    <div class="news-content">
+                        <h3>Character Introduction — "The Undying Fire" Durin</h3>
+                        <p> <em>"Thump.. Thump.. Thump.."</em> The ceaseless drumming in his chest reminds Durin thus: "You carry the hopes of a distant past. Your soul is resplendent and nascent, and within you burns a fervor no winter blizzard can quench." As the story opens to a fresh page, the little dragon begins his journey to learn what being human truly means..</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <a href="https://www.hoyolab.com/article/42466228" class="news-link">
+                        <img src="news/news6.jpg" alt="News 5">
+                    </a>
+                    <div class="news-content">
+                        <h3>The Version "Luna III" "Events Calendar" is now available!</h3>
+                        <p>Click to check out version benefits in real-time</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <a href="https://www.hoyolab.com/article/42427116" class="news-link">
+                        <img src="news/news7.jpg" alt="News 6">
+                    </a>
+                    <div class="news-content">
+                        <h3>Version "Luna III": "A Nocturne of the Far North" Events Overview | Genshin Impact</h3>
+                        <p>Genshin Impact Version "Luna III": "A Nocturne of the Far North" will be released on December 3, 2025. Thank you for your support and companionship~</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <a href="https://www.hoyolab.com/article/42426352" class="news-link">
+                        <img src="news/news8.jpg" alt="News 7">
+                    </a>
+                    <div class="news-content">
+                        <h3>Miliastra Wonderland: Version "Luna III" Legendary Set Teaser</h3>
+                        <p>Draped in wings of pure white, crowned by the ceaseless cry of the winter wind, this attire embodies serenity and nobility alike. <br> Dance freely in this grand celebration of ice and snow, and let the winter winds become your music!</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <a href="https://www.hoyolab.com/article/42397861" class="news-link">
+                        <img src="news/news9.jpg" alt="News 8">
+                    </a>
+                    <div class="news-content">
+                        <h3>Genshin Impact Version "Luna III" Special Program Preview</h3>
+                        <p>Dear Traveler, it's announcement time! The special program for Genshin Impact's new version will premiere on the official Twitch and YouTube channels on 11/21/2025 at 07:00 AM (UTC-5). <br> This special program will feature juicy details about new game content and developments in Version "Luna III." It will also "drop" some redemption codes and other goodies!<br> Make sure to follow us, Traveler. We'll see you there!</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <a href="https://www.hoyolab.com/article/42248284" class="news-link">
+                        <img src="news/news10.jpg" alt="News 9">
+                    </a>
+                    <div class="news-content">
+                        <h3>The waters change course, but the mountains move not — Boosted Drop Rate for "Vago Mundo" Zhongli (Geo)!</h3>
+                        <p>Hello, Traveler! The Character Event Wish "Gentry of Hermitage" will be available on November 11 and "Vago Mundo" Zhongli (Geo) will receive a huge drop-rate boost! <br> Additionally, there will be a higher chance of obtaining "Spring Woven From Jade" Lan Yan (Anemo), "Thorny Benevolence" Rosaria (Cryo), and "Stage Lucida" Yun Jin (Geo) through this event wish~</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <a href="https://www.hoyolab.com/article/42197501" class="news-link">
+                        <img src="news/news11.jpg" alt="News 10">
+                    </a>
+                    <div class="news-content">
+                        <h3>Version "Luna II" Event Wishes Notice - Phase II</h3>
+                        <p>Event Wish "The Hearth's Ashen Shadow" - Boosted Drop Rate for "Dire Balemoon" Arlecchino (Pyro)!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- footer -->
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="https://genshin.hoyoverse.com/en/company/privacy">Privacy Policy</a>
+            <a href="https://genshin.hoyoverse.com/en/company/terms">Terms</a>
+            <a href="https://www.hoyoverse.com/en-us/about-us?utm_source=genshin&utm_medium=footer">About HoYoLab</a>
+            <a href="https://cs.hoyoverse.com/static/hoyoverse-new-csc-service-hall-fe/index.html?page_id=19&login_type=visitor&game_biz=platform_hyvpass&lang=en-us&utm_source=genshin&utm_medium=footer">Help Center</a>
+        </div>
+        <div class="esrb">
+            <img src="img/esrb.png" alt="ESRB">
+        </div>
+        <div class="logos">
+            <img src="logo/logo-genshin.png" alt="Genshin Impact Logo">
+            <img src="logo/hoyoverse.png" alt="HoYoVerse Logo">
+        </div>
+        <p class="copyright">© 2025 COGNOSPHERE. All Rights Reserved. <br> Genshin Impact and all related assets, images, characters, and trademarks belong to HoYoverse. </p>
+        <p class="credits">Website created by <a href="https://www.instagram.com/vulturedvin/"><em>@vulturedvin</em></a> on IG</p>
+    </div>
+</footer>
+
+
+
+    <!-- scripts -->
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+            $('.tabs').tabs();
+            $('.dropdown-trigger').dropdown();
+            $('.carousel').first().carousel({
+                indicators: true,
+                numVisible: 1,
+                fullWidth: true
+            });
+            $('#news-carousel').carousel({
+                indicators: true,
+                numVisible: 3
+            });
+            $(".scroll-btn").click(function(e){
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $("#next-section").offset().top
+                }, 800);
+            });
+            const audio = $('#bgMusic')[0];
+            const toggleBtn = $('#toggleBtn');
+            toggleBtn.on('click', function() {
+                if (audio.paused) {
+                    audio.play();
+                    toggleBtn.find('i').text('not_interested');
+                } else {
+                    audio.pause();
+                    toggleBtn.find('i').text('music_note');
+                }
+            });
+            document.getElementById('bgMusic').volume = 0.5;
+            $('#news-prev').click(function () {
+                $('#news-carousel').carousel('prev');
+            });
+
+            $('#news-next').click(function () {
+                $('#news-carousel').carousel('next');
+                    });
+            $('#featured-carousel').carousel({
+                indicators: true,
+                numVisible: 1,
+                fullWidth: true
+            });
+        });
+    </script>
+</body>
+</html>

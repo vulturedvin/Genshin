@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="characters.css">
+    <link rel="icon" href="logo/primogem.png">
+    <title>Characters – Genshin Impact</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <header>
+        <nav class="nav-wrapper nav">
+            <div class="container">
+                <a href="home.html" class="brand-logo">
+                    <img src="logo/logo-genshin.png" alt="Genshin Impact Logo" class="logo">
+                </a>
+
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-gameplay">Gameplay<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-gameplay" class="dropdown-content">
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                        <li><a href="weapons.html">Weapons</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-world">World<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-world" class="dropdown-content">
+                        <li><a href="regions.html">Regions</a></li>
+                        <li><a href="lore.html">Lore</a></li>
+                        <li><a href="exploration.html">Exploration</a></li>
+                    </ul>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-about">About<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="dropdown-about" class="dropdown-content">
+                        <li><a href="about.html">About the Game</a></li>
+                        <li><a href="play.html">Play Now</a></li>
+                    </ul>
+
+                    <audio id="bgMusic" src="music/call-it-a-day.mp3" autoplay loop></audio>
+                    <a id="toggleBtn" class="btn waves-effect waves-light">
+                        <i class="material-icons center">music_note</i>
+                    </a>
+                </ul>
+                <ul class="sidenav grey darken-4" id="mobile-menu">
+                    <li><a href="home.html" class="white-text" style="margin-top: 15%;">Home</a></li>
+                    <li><a href="news.html" class="white-text" >News</a></li>
+                    <li><a href="characters.html" class="white-text">Characters</a></li>
+                    <li><a href="elements.html" class="white-text">Elements</a></li>
+                    <li><a href="weapons.html" class="white-text">Weapons</a></li>
+                    <li><a href="regions.html" class="white-text">Regions</a></li>
+                    <li><a href="lore.html" class="white-text">Lore</a></li>
+                    <li><a href="exploration.html" class="white-text">Exploration</a></li>
+                    <li><a href="about.html" class="white-text">About the Game</a></li>
+                    <li><a href="play.html" class="white-text">Play Now</a></li>
+                    <li><img style=" max-width: 100%; margin-top: 30%; " src="logo/logo-genshin.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+
+    <section class="banner">
+        <img src="background/char.png"></img>
+        <div class="banner-overlay">
+            <h1>Characters</h1>
+    
+            <p class="details"><strong>Characters</strong> are obtainable units in Genshin Impact. <br>They come in different qualities, are aligned with an Element, equippable with a specific Weapon, and belong to a Region.</p>
+        </div>
+        
+    </section>
+
+
+
+
+<!-- mondstadt -->
+<section class="character-section" id="mondstadt">
+    <div class="section-bg"></div>
+    <div class="container">
+        <img src="regions/UI_LoadingPic_Mondstadt.png" alt="Mondstadt" class="region">
+        <h2>Mondstadt</h2>
+        <div class="character-grid">
+
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/venti.png" alt="Venti" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Venti</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/albedo.png" alt="Albedo" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-geo.png" alt="Geo" class="element-icon">
+                        <p>Albedo</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/diluc.png" alt="Diluc" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Diluc</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/eula.png" alt="Eula" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Eula</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/jean.png" alt="Jean" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Jean</p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/klee.png" alt="Klee" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Klee</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/mona.png" alt="Mona" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Mona</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/amber.png" alt="Amber" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Amber</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/barbara.png" alt="Barbara" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Barbara</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/bennett.png" alt="Bennett" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Bennett</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="character-row">
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/dahlia.png" alt="Dahlia" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Dahlia</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/diona.png" alt="Diona" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Diona</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/fischl.png" alt="Fischl" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Fischl</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/kaeya.png" alt="Kaeya" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Kaeya</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/lisa.png" alt="Lisa" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Lisa</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="character-row">
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/mika.png" alt="Mika" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Mika</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/noelle.png" alt="Noelle" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-geo.png" alt="Geo" class="element-icon">
+                        <p>Noelle</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/razor.png" alt="Razor" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Razor</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/rosaria.png" alt="Rosaria" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Rosaria</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/sucrose.png" alt="Sucrose" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Sucrose</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- liyue -->
+<section class="character-section" id="liyue">
+    <div class="section-bg"></div>
+    <div class="container">
+        <img src="regions/UI_LoadingPic_LiYue.png" alt="Liyue" class="region">
+        <h2>Liyue</h2>
+        <div class="character-grid">
+            
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/zhongli.png" alt="Zhongli" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-geo.png" alt="Geo" class="element-icon">
+                        <p>Zhongli</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/baizhu.png" alt="Baizhu" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-dendro.png" alt="Dendro" class="element-icon">
+                        <p>Baizhu</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/ganyu.png" alt="Ganyu" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Ganyu</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/hutao.png" alt="Hu Tao" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Hu Tao</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/keqing.png" alt="Keqing" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Keqing</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/qiqi.png" alt="Qiqi" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Qiqi</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/shenhe.png" alt="Shenhe" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Shenhe</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/xianyun.png" alt="Xianyun" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Xianyun</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/xiao.png" alt="Xiao" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Xiao</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/yelan.png" alt="Yelan" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Yelan</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="character-row">
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/beidou.png" alt="Beidou" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Beidou</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/chongyun.png" alt="Chongyun" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Chongyun</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/gaming.png" alt="Gaming" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Gaming</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/lanyan.png" alt="Lan Yan" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Lan Yan</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/ningguang.png" alt="Ningguang" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-geo.png" alt="Geo" class="element-icon">
+                        <p>Ningguang</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="character-row">
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/xiangling.png" alt="Xiangling" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Xiangling</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/xingqiu.png" alt="Xingqiu" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Xingqiu</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/xinyan.png" alt="Xinyan" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Xinyan</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/yanfei.png" alt="Yanfei" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Yanfei</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/yaoyao.png" alt="Yaoyao" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-dendro.png" alt="Dendro" class="element-icon">
+                        <p>Yaoyao</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="character-row">
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/yunjin.png" alt="Yun Jin" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-geo.png" alt="Geo" class="element-icon">
+                        <p>Yun Jin</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- inazuma -->
+<section class="character-section" id="inazuma">
+    <div class="section-bg"></div>
+    <div class="container">
+        <img src="regions/UI_LoadingPic_Inazuma.png" alt="Inazuma" class="region">
+        <h2>Inazuma</h2>
+        <div class="character-grid">
+            
+
+
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/raidenshogun.png" alt="Raiden Shogun" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Raiden Shogun</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/aratakiitto.png" alt="Arataki Itto" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-geo.png" alt="Geo" class="element-icon">
+                        <p>Arataki Itto</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/chiori.png" alt="Chiori" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-geo.png" alt="Geo" class="element-icon">
+                        <p>Chiori</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/kaedeharakazuha.png" alt="Kaedehara Kazuha" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Kaedehara Kazuha</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/kamisatoayaka.png" alt="Kamisato Ayaka" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Kamisato Ayaka</p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/kamisatoayato.png" alt="Kamisato Ayato" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Kamisato Ayato</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/sangonomiyakokomi.png" alt="Sangonomiya Kokomi" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Sangonomiya Kokomi</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/yaemiko.png" alt="Yae Miko" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Yae Miko</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/yoimiya.png" alt="Yoimiya" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Yoimiya</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/yumemizukimizuki.png" alt="Yumemizuki Mizuki" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Yumemizuki Mizuki</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="character-row">
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/gorou.png" alt="Gorou" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-geo.png" alt="Geo" class="element-icon">
+                        <p>Gorou</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/kirara.png" alt="Kirara" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-dendro.png" alt="Dendro" class="element-icon">
+                        <p>Kirara</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/kujousara.png" alt="Kujou Sara" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Kujou Sara</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/kukishinobu.png" alt="Kuki Shinobu" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Kuki Shinobu</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/sayu.png" alt="Sayu" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Sayu</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="character-row last-row">
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/shikanoinheizou.png" alt="Shikanoin Heizou" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Shikanoin Heizou</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/thoma.png" alt="Thoma" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Thoma</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- sumeru -->
+<section class="character-section" id="sumeru">
+    <div class="section-bg"></div>
+    <div class="container">
+        <img src="regions/UI_LoadingPic_Sumeru.png" alt="Sumeru" class="region">
+        <h2>Sumeru</h2>
+        <div class="character-grid">
+            
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/nahida.png" alt="Nahida" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-dendro.png" alt="Dendro" class="element-icon">
+                        <p>Nahida</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/alhaitham.png" alt="Alhaitham" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-dendro.png" alt="Dendro" class="element-icon">
+                        <p>Alhaitham</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/cyno.png" alt="Cyno" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Cyno</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/dehya.png" alt="Dehya" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Dehya</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/nilou.png" alt="Nilou" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Nilou</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/tighnari.png" alt="Tighnari" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-dendro.png" alt="Dendro" class="element-icon">
+                        <p>Tighnari</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/wanderer.png" alt="Wanderer" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Wanderer</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/candace.png" alt="Candace" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Candace</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/collei.png" alt="Collei" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-dendro.png" alt="Dendro" class="element-icon">
+                        <p>Collei</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/dori.png" alt="Dori" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Dori</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="character-row last-row">
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/faruzan.png" alt="Faruzan" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Faruzan</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/kaveh.png" alt="Kaveh" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-dendro.png" alt="Dendro" class="element-icon">
+                        <p>Kaveh</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/layla.png" alt="Layla" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Layla</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/sethos.png" alt="Sethos" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Sethos</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- fontaine -->
+<section class="character-section" id="fontaine">
+    <div class="section-bg"></div>
+    <div class="container">
+        <img src="regions/UI_LoadingPic_Fontaine.png" alt="Fontaine" class="region">
+        <h2>Fontaine</h2>
+        <div class="character-grid">
+           
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/furina.png" alt="Furina" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Furina</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/clorinde.png" alt="Clorinde" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Clorinde</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/emilie.png" alt="Emilie" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-dendro.png" alt="Dendro" class="element-icon">
+                        <p>Emilie</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/escoffier.png" alt="Escoffier" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Escoffier</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/lyney.png" alt="Lyney" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Lyney</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/navia.png" alt="Navia" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-geo.png" alt="Geo" class="element-icon">
+                        <p>Navia</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/neuvillette.png" alt="Neuvillette" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Neuvillette</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/sigewinne.png" alt="Sigewinne" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Sigewinne</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/wriothesley.png" alt="Wriothesley" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Wriothesley</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/charlotte.png" alt="Charlotte" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Charlotte</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="character-row last-row">
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/chevreuse.png" alt="Chevreuse" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Chevreuse</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/freminet.png" alt="Freminet" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Freminet</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/lynette.png" alt="Lynette" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Lynette</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- natlan -->
+<section class="character-section" id="natlan">
+    <div class="section-bg"></div>
+    <div class="container">
+        <img src="regions/UI_LoadingPic_Natlan.png" alt="Natlan" class="region">
+        <h2>Natlan</h2>
+        <div class="character-grid">
+
+
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/mavuika.png" alt="Mavuika" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        <p>Mavuika</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/chasca.png" alt="Chasca" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Chasca</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/citlali.png" alt="Citlali" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                        <p>Citlali</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/kinich.png" alt="Kinich" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-dendro.png" alt="Dendro" class="element-icon">
+                        <p>Kinich</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/mualani.png" alt="Mualani" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Mualani</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/varesa.png" alt="Varesa" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Varesa</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/xilonen.png" alt="Xilonen" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-geo.png" alt="Geo" class="element-icon">
+                        <p>Xilonen</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/iansan.png" alt="Iansan" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Iansan</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/ifa.png" alt="Ifa" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        <p>Ifa</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/kachina.png" alt="Kachina" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-geo.png" alt="Geo" class="element-icon">
+                        <p>Kachina</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="character-row last-row">
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/ororon.png" alt="Ororon" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Ororon</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- nod krai -->
+<section class="character-section" id="nod-krai">
+    <div class="section-bg"></div>
+    <div class="container">
+        <img src="regions/UI_LoadingPic_NodKrai.png" alt="NodKrai" class="region">
+        <h2>Nod Krai</h2>
+        <div class="character-grid">
+            
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/flins.png" alt="Flins" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Flins</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/ineffa.png" alt="Ineffa" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-electro.png" alt="Electro" class="element-icon">
+                        <p>Ineffa</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/lauma.png" alt="Lauma" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-dendro.png" alt="Dendro" class="element-icon">
+                        <p>Lauma</p>
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/nefer.png" alt="Nefer" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-dendro.png" alt="Dendro" class="element-icon">
+                        <p>Nefer</p>
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/aino.png" alt="Aino" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        <p>Aino</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- snezhnaya -->
+<section class="character-section" id="snezhnaya">
+    <div class="section-bg"></div>
+    <div class="container">
+        <img src="regions/UI_LoadingPic_Three_Realms_Gateway_Offering.png" alt="Snezhnaya" class="region">
+        <h2>Snezhnaya</h2>
+        <div class="character-grid">
+
+
+
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/arlecchino.png" alt="arlecchino" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        Arlecchino
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/tartalgia.png" alt="tartalgia" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-hydro.png" alt="Hydro" class="element-icon">
+                        Tartalgia
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                        <div class="avatar-container">
+                            <img src="characters/skirk.png" alt="Skirk" class="avatar">
+                        </div>
+                        <div class="name-card">
+                            <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                            Skirk
+                        </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- upcoming -->
+<section class="character-section" id="upcoming">
+    <div class="section-bg"></div>
+    <div class="container">
+        <img src="regions/UI_LoadingPic_Domain.png" alt="Upcoming" class="region">
+        <h2>Upcoming / Extra</h2>
+        <div class="character-grid">
+
+
+
+            <div class="character-row">
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/dainsleif.png" alt="Dainsleif" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        Dainsleif
+                    </div>
+                </div>
+                <div class="character-card five-star">
+                    <div class="avatar-container">
+                        <img src="characters/durin.png" alt="Durin" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-pyro.png" alt="Pyro" class="element-icon">
+                        Durin
+                    </div>
+                </div>
+                <div class="character-card four-star">
+                    <div class="avatar-container">
+                        <img src="characters/jahoda.png" alt="Jahoda" class="avatar">
+                    </div>
+                    <div class="name-card">
+                        <img src="genshin elements/no-anemo.png" alt="Anemo" class="element-icon">
+                        Jahoda
+                    </div>
+                </div>
+
+                    <div class="character-card five-star">
+                        <div class="avatar-container">
+                            <img src="characters/aloy.png" alt="Aloy" class="avatar" >
+                        </div>
+                        <div class="name-card">
+                            <img src="genshin elements/no-cryo.png" alt="Cryo" class="element-icon">
+                            Aloy
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="https://genshin.hoyoverse.com/en/company/privacy">Privacy Policy</a>
+            <a href="https://genshin.hoyoverse.com/en/company/terms">Terms</a>
+            <a href="https://www.hoyoverse.com/en-us/about-us?utm_source=genshin&utm_medium=footer">About HoYoLab</a>
+            <a href="https://cs.hoyoverse.com/static/hoyoverse-new-csc-service-hall-fe/index.html?page_id=19&login_type=visitor&game_biz=platform_hyvpass&lang=en-us&utm_source=genshin&utm_medium=footer">Help Center</a>
+        </div>
+        <div class="esrb">
+            <img src="img/esrb.png" alt="ESRB">
+        </div>
+        <div class="logos">
+            <img src="logo/logo-genshin.png" alt="Genshin Impact Logo">
+            <img src="logo/hoyoverse.png" alt="HoYoVerse Logo">
+        </div>
+        <p class="copyright">© 2025 COGNOSPHERE. All Rights Reserved. <br> Genshin Impact and all related assets, images, characters, and trademarks belong to HoYoverse. </p>
+        <p class="credits">Website created by <a href="https://www.instagram.com/vulturedvin/"><em>@vulturedvin</em></a> on IG</p>
+    </div>
+</footer>
+
+
+
+    <!-- scripts -->
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+            $('.tabs').tabs();
+            $('.dropdown-trigger').dropdown();
+            $('.carousel').first().carousel({
+                indicators: true,
+                numVisible: 1,
+                fullWidth: true
+            });
+            $('#news-carousel').carousel({
+                indicators: true,
+                numVisible: 3
+            });
+            $(".scroll-btn").click(function(e){
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $("#next-section").offset().top
+                }, 800);
+            });
+            const audio = $('#bgMusic')[0];
+            const toggleBtn = $('#toggleBtn');
+            toggleBtn.on('click', function() {
+                if (audio.paused) {
+                    audio.play();
+                    toggleBtn.find('i').text('not_interested');
+                } else {
+                    audio.pause();
+                    toggleBtn.find('i').text('music_note');
+                }
+            });
+            document.getElementById('bgMusic').volume = 0.5;
+            $('#news-prev').click(function () {
+                $('#news-carousel').carousel('prev');
+            });
+
+            $('#news-next').click(function () {
+                $('#news-carousel').carousel('next');
+                    });
+            $('#featured-carousel').carousel({
+                indicators: true,
+                numVisible: 1,
+                fullWidth: true
+            });
+        });
+    </script>
+</body>
+</html>
