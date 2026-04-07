@@ -10,6 +10,15 @@ body {
     overflow: hidden;
 }
 
+h1 {
+    font-family: 'Basta';
+    background: white;
+    color: white;
+    overflow: hidden;
+}
+
+
+
 html {
     cursor: url(cursor/genshin_cursor.cur), auto;
 }
