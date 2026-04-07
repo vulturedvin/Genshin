@@ -1,2 +1,2 @@
-# Genshin
-Genshin Impact Fanmade Website
+# TXT
+Tomorrow X Together Fanmade Website
